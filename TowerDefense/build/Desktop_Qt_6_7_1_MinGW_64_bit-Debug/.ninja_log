@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ninja log v5
 0	301	7379985063686741	CMakeFiles/TowerDefense.dir/main.cpp.obj	b8d8119e85aa0bb9
 303	391	7379985064554028	TowerDefense.exe	76c25b4e9374cf98
@@ -7,3 +8,9 @@
 378	469	7379988448717314	TowerDefense.exe	76c25b4e9374cf98
 3	302	7379991523377138	CMakeFiles/TowerDefense.dir/main.cpp.obj	b8d8119e85aa0bb9
 302	400	7379991524300273	TowerDefense.exe	76c25b4e9374cf98
+=======
+# ninja log v6
+11	257	7379998486171232	CMakeFiles/TowerDefense.dir/main.cpp.obj	4a0c86d8ad6bcb6a
+259	427	7379998488528178	TowerDefense.exe	108d9437a5c6f3b1
+2	8	7380001157192001	clean	c0505d4284e53968
+>>>>>>> 22e59aa9da81c81066b0b8b645c4f4b2d7e15a07
