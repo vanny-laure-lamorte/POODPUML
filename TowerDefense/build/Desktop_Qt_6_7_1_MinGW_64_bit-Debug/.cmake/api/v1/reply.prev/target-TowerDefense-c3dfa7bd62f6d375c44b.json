@@ -45,7 +45,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-DQT_QML_DEBUG -g -std=gnu++17 -fdiagnostics-color=always"
+					"fragment" : "-std=gnu++17 -fdiagnostics-color=always"
 				}
 			],
 			"language" : "CXX",
@@ -82,10 +82,6 @@
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-DQT_QML_DEBUG -g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
