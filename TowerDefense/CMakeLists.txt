@@ -5,7 +5,8 @@ project(TowerDefense LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(TowerDefense main.cpp)
+add_executable(TowerDefense main.cpp
+    menu.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS TowerDefense
