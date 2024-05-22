@@ -5,3 +5,5 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen_timestamp_deps.dir
+C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen.dir
