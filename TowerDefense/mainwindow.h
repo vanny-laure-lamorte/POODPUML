@@ -15,6 +15,7 @@ public:
     ~MainWindow();
 
 private slots:
+    void showMenuPage();
     void showGamePage();
 
 private:

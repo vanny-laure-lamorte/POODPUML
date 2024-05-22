@@ -6,13 +6,13 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1200</width>
+    <width>1500</width>
     <height>750</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1200</width>
+    <width>1500</width>
     <height>750</height>
    </size>
   </property>
@@ -26,6 +26,18 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1500</width>
+     <height>750</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>750</height>
+    </size>
+   </property>
    <property name="autoFillBackground">
     <bool>false</bool>
    </property>
@@ -37,8 +49,8 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>1201</width>
-      <height>721</height>
+      <width>1500</width>
+      <height>750</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -47,17 +59,16 @@
     <widget class="QWidget" name="pageMenu">
      <property name="styleSheet">
       <string notr="true">QWidget#pageMenu {
-	background-image: url(:/assets/img/homeBackground.jpg); 
+    border-image: url(:/assets/img/homeBackground.jpg) 0 0 0 0 stretch stretch;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
 }</string>
      </property>
      <widget class="QPushButton" name="buttonExit">
       <property name="geometry">
        <rect>
-        <x>495</x>
-        <y>410</y>
+        <x>645</x>
+        <y>450</y>
         <width>240</width>
         <height>70</height>
        </rect>
@@ -83,8 +94,8 @@ QPushButton:hover {
      <widget class="QPushButton" name="buttonGame">
       <property name="geometry">
        <rect>
-        <x>495</x>
-        <y>230</y>
+        <x>645</x>
+        <y>270</y>
         <width>240</width>
         <height>70</height>
        </rect>
@@ -110,21 +121,21 @@ QPushButton:hover {
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>460</x>
-        <y>70</y>
-        <width>306</width>
-        <height>63</height>
+        <x>410</x>
+        <y>-20</y>
+        <width>721</width>
+        <height>161</height>
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:28pt;&quot;&gt;Tower Defense&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:700;&quot;&gt;Tower Defense&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="buttonRules">
       <property name="geometry">
        <rect>
-        <x>495</x>
-        <y>320</y>
+        <x>645</x>
+        <y>360</y>
         <width>240</width>
         <height>70</height>
        </rect>
@@ -157,9 +168,21 @@ background-color: rgb(39, 174, 96);
 	border-image: url(:/assets/img/gameBackground.png) 0 0 0 0 stretch stretch;
     background-repeat: no-repeat;
     background-position: center;
-	background-size: cover;
 }</string>
      </property>
+     <widget class="QPushButton" name="buttonMenu">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>20</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Menu</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
