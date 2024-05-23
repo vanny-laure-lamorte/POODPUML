@@ -300,6 +300,12 @@
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
 			null
+		],
+		[
+			"C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.h",
+			"MU",
+			"EWIEGA46WW/moc_monster.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -380,6 +386,11 @@
 		],
 		[
 			"C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.cpp",
 			"MU",
 			null
 		]

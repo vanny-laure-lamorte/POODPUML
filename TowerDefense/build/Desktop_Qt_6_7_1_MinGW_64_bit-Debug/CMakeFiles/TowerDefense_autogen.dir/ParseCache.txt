@@ -352,6 +352,8 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/moc_predefs.h
  mdp:C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.h
+C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.cpp
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/main.cpp
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.cpp
  uic:ui_mainwindow.h
+C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.h

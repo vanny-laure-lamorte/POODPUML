@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-4ef6a80b63a559c52436.json",
+					"jsonFile" : "directory-.-Debug-a3d34aee5743a1c69c0d.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "TowerDefense::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-TowerDefense-Debug-363ed1c1fedce842dad3.json",
+					"jsonFile" : "target-TowerDefense-Debug-5d132ef6cf24deac6c21.json",
 					"name" : "TowerDefense",
 					"projectIndex" : 0
 				},

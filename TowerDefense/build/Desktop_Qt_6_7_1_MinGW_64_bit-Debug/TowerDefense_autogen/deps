@@ -556,6 +556,8 @@ TowerDefense_autogen/timestamp: \
 	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/main.cpp \
 	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.cpp \
 	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.h \
+	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.cpp \
+	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/monster.h \
 	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/ressources.qrc \
 	C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.ui \
 	C:/Qt/Tools/CMake_64/bin/cmake.exe
