@@ -1,0 +1,43 @@
+{
+<<<<<<< HEAD:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json
+	"BUILD_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense",
+	"CMAKE_SOURCE_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense",
+	"INCLUDE_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/homeBackground.jpg",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/gameBackground.png"
+	],
+	"LOCK_FILE" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Lock.lock",
+=======
+	"BUILD_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense",
+	"CMAKE_SOURCE_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense",
+	"INCLUDE_DIR" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/assets/img/homeBackground.jpg",
+		"C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/assets/img/gameBackground.png"
+	],
+	"LOCK_FILE" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Lock.lock",
+>>>>>>> 74f88c878f3526f6ce075af4f1b8b19cf3a8daf0:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "ressources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_ressources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+<<<<<<< HEAD:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json
+	"SETTINGS_FILE" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/ressources.qrc",
+=======
+	"SETTINGS_FILE" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/ressources.qrc",
+>>>>>>> 74f88c878f3526f6ce075af4f1b8b19cf3a8daf0:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json
+	"VERBOSITY" : 0
+}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>750</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>750</height>
+   </size>
+  </property>
+  <property name="mouseTracking">
+   <bool>false</bool>
+  </property>
+  <property name="windowTitle">
+   <string>Tower Defense</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1500</width>
+     <height>750</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1500</width>
+     <height>750</height>
+    </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1500</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="pageMenu">
+     <property name="styleSheet">
+      <string notr="true">QWidget#pageMenu {
+    border-image: url(:/assets/img/homeBackground.jpg) 0 0 0 0 stretch stretch;
+	background-repeat: no-repeat;
+	background-position: center;
+}</string>
+     </property>
+     <widget class="QPushButton" name="buttonExit">
+      <property name="geometry">
+       <rect>
+        <x>645</x>
+        <y>450</y>
+        <width>240</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(85, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+	font: 25pt &quot;Eras Medium ITC&quot;;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;  /* Couleur de fond en survol */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonGame">
+      <property name="geometry">
+       <rect>
+        <x>645</x>
+        <y>270</y>
+        <width>240</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(153, 0, 0);
+	font: 25pt &quot;Eras Medium ITC&quot;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;  /* Couleur de fond en survol */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Game</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>-20</y>
+        <width>721</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:48pt; font-weight:700;&quot;&gt;Tower Defense&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonRules">
+      <property name="geometry">
+       <rect>
+        <x>645</x>
+        <y>360</y>
+        <width>240</width>
+        <height>70</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: rgb(130, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+	font: 25pt &quot;Eras Medium ITC&quot;;
+}
+
+QPushButton:hover {
+    background-color: #2980b9;  /* Couleur de fond en survol */
+}
+buttonGame{    
+background-color: rgb(39, 174, 96);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Rules</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageGame">
+     <property name="styleSheet">
+      <string notr="true">QWidget#pageGame {
+	border-image: url(:/assets/img/gameBackground.png) 0 0 0 0 stretch stretch;
+    background-repeat: no-repeat;
+    background-position: center;
+}</string>
+     </property>
+     <widget class="QPushButton" name="buttonMenu">
+      <property name="geometry">
+       <rect>
+        <x>1320</x>
+        <y>20</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Menu</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
