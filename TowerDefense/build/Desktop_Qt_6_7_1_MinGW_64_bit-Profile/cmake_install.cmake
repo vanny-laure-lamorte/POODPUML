@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Install script for directory: C:/Qt/projet/POODPUML/TowerDefense
+=======
+# Install script for directory: C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense
+>>>>>>> 98c8499cc4aba19122e4af7a21f1c514aef8b790
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +42,11 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+<<<<<<< HEAD
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense.exe")
+=======
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense.exe")
+>>>>>>> 98c8499cc4aba19122e4af7a21f1c514aef8b790
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TowerDefense.exe" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/TowerDefense.exe")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -55,5 +63,9 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
+<<<<<<< HEAD
 file(WRITE "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/${CMAKE_INSTALL_MANIFEST}"
+=======
+file(WRITE "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/${CMAKE_INSTALL_MANIFEST}"
+>>>>>>> 98c8499cc4aba19122e4af7a21f1c514aef8b790
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

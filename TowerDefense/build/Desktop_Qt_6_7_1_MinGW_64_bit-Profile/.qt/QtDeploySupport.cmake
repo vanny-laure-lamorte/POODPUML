@@ -34,7 +34,11 @@ endif()
 set(__QT_DEPLOY_SYSTEM_NAME "Windows")
 set(__QT_DEPLOY_IS_SHARED_LIBS_BUILD "ON")
 set(__QT_DEPLOY_TOOL "C:/Qt/6.7.1/mingw_64/bin/windeployqt.exe")
+<<<<<<< HEAD
 set(__QT_DEPLOY_IMPL_DIR "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.qt")
+=======
+set(__QT_DEPLOY_IMPL_DIR "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.qt")
+>>>>>>> 98c8499cc4aba19122e4af7a21f1c514aef8b790
 set(__QT_DEPLOY_VERBOSE "")
 set(__QT_CMAKE_EXPORT_NAMESPACE "Qt6")
 set(__QT_DEPLOY_GENERATOR_IS_MULTI_CONFIG "0")
@@ -58,7 +62,11 @@ set(__QT_DEPLOY_QT_DEBUG_POSTFIX "")
 
 # Define the CMake commands to be made available during deployment.
 set(__qt_deploy_support_files
+<<<<<<< HEAD
     "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.qt/QtDeployTargets.cmake"
+=======
+    "C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.qt/QtDeployTargets.cmake"
+>>>>>>> 98c8499cc4aba19122e4af7a21f1c514aef8b790
     "C:/Qt/6.7.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
 )
 foreach(__qt_deploy_support_file IN LISTS __qt_deploy_support_files)
