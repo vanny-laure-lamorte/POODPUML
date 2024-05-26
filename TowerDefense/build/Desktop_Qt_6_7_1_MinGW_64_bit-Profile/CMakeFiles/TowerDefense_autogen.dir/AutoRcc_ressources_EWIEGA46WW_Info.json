@@ -7,8 +7,15 @@
 	"INCLUDE_DIR" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/Tower3.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/Tower2.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/monster.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/noTower.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/gameBackground2.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/circle.png",
 		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/homeBackground.jpg",
-		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/gameBackground.png"
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/gameBackground.png",
+		"C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/assets/img/Tower1.png"
 	],
 	"LOCK_FILE" : "C:/Users/Vanny Laure Lamorte/Plateforme/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
