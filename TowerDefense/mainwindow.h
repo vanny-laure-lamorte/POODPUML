@@ -5,8 +5,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-//Test merge
-//#include "tower.h"
+#include "tower.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }

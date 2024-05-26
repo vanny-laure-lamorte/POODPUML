@@ -25,12 +25,6 @@ Tower::Tower(QWidget *parent)
     connect(towerUpgrade2, &QPushButton::clicked, this, &Tower::ontowerUpgrade2Clicked);
     connect(towerUpgrade3, &QPushButton::clicked, this, &Tower::ontowerUpgrade3Clicked);
 
-    // Create the animation object
-    animation = new QPropertyAnimation(tower1, "geometry");
-    animation->setDuration(1000); // Animation duration in milliseconds
-    animation->setStartValue(QRect(tower1->x(), tower1->y(), tower1->width(), tower1->height()));
-    animation->setEndValue(QRect(tower1->x(), tower1->y() - 20, tower1->width(), tower1->height()));
-    animation->setEasingCurve(QEasingCurve::OutBounce); // Easing curve for the animation
 }
 
 void Tower::onTowerButton1Clicked()
@@ -42,8 +36,6 @@ void Tower::onTowerButton1Clicked()
     towerUpgrade2->setVisible(newVisibility);
     towerUpgrade3->setVisible(newVisibility);
 
-    // Start the animation
-    animation->start();
 }
 
 void Tower::ontowerUpgrade1Clicked()
@@ -75,11 +67,8 @@ void Tower::displayTower()
     else if (towerLevel == 3)
         tower1->setPixmap(QPixmap(":/assets/img/Tower3.png"));
 
-    // Start the animation
-    animation->start();
 }
 
 Tower::~Tower()
 {
-    delete animation;
 }
