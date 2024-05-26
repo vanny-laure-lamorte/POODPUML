@@ -1,6 +1,5 @@
 C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/EWIEGA46WW/moc_game.cpp: C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/game.h \
   C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/moc_predefs.h \
-  C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
@@ -14,7 +13,6 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/6.7.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbasicatomic.h \
-  C:/Qt/6.7.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -103,7 +101,6 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtextstream.h \
-  C:/Qt/6.7.1/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -120,7 +117,6 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/6.7.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qyieldcpu.h \
-  C:/Qt/6.7.1/mingw_64/include/QtGui/QPixmap \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qaction.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qbitmap.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qbrush.h \
@@ -133,32 +129,25 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/6.7.1/mingw_64/include/QtGui/qimage.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpaintdevice.h \
-  C:/Qt/6.7.1/mingw_64/include/QtGui/qpainter.h \
-  C:/Qt/6.7.1/mingw_64/include/QtGui/qpainterpath.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpalette.h \
-  C:/Qt/6.7.1/mingw_64/include/QtGui/qpen.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qpolygon.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qregion.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qrgb.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qrgba64.h \
-  C:/Qt/6.7.1/mingw_64/include/QtGui/qtextoption.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtguiglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsPixmapItem \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsScene \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QGraphicsView \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsitem.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsscene.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgraphicsview.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qscrollarea.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMenu \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmenu.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -362,4 +351,5 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
+  C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/tower.h

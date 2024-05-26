@@ -1,4 +1,4 @@
-C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/mainwindow.h \
+C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/EWIEGA46WW/moc_tower.cpp: C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/tower.h \
   C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/moc_predefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QPropertyAnimation \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
@@ -152,21 +152,13 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qboxlayout.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qgridlayout.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
-  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -369,5 +361,4 @@ C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/lucas/Desktop/Qt/POODPUML/TowerDefense/tower.h
+  C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h

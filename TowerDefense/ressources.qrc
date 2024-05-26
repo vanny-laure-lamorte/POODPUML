@@ -3,5 +3,11 @@
         <file>assets/img/homeBackground.jpg</file>
         <file>assets/img/gameBackground.png</file>
         <file>assets/img/monster.png</file>
+        <file>assets/img/gameBackground2.png</file>
+        <file>assets/img/noTower.png</file>
+        <file>assets/img/circle.png</file>
+        <file>assets/img/Tower1.png</file>
+        <file>assets/img/Tower2.png</file>
+        <file>assets/img/Tower3.png</file>
     </qresource>
 </RCC>
