@@ -60,6 +60,10 @@
 #define __FLT64X_MAX_10_EXP__ 4932
 #define __cpp_if_constexpr 201606L
 #define __LDBL_IS_IEC_60559__ 2
+<<<<<<< HEAD:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h
+#define QT_NO_DEBUG 1
+=======
+>>>>>>> 74f88c878f3526f6ce075af4f1b8b19cf3a8daf0:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/TowerDefense_autogen/moc_predefs.h
 #define __FLT64X_HAS_QUIET_NAN__ 1
 #define __UINT_LEAST8_MAX__ 0xff
 #define __GCC_ATOMIC_BOOL_LOCK_FREE 2
