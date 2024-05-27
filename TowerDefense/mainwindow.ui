@@ -297,6 +297,57 @@ background-color: rgb(39, 174, 96);
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/music.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="noMusic">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>10</y>
+        <width>91</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/noMusic.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonMonster">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>250</y>
+        <width>80</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PushButton</string>
+      </property>
+     </widget>
      <zorder>upgradeShop1</zorder>
      <zorder>buttonMenu</zorder>
      <zorder>towerUpgrade1</zorder>
@@ -304,6 +355,9 @@ background-color: rgb(39, 174, 96);
      <zorder>towerUpgrade3</zorder>
      <zorder>tower1</zorder>
      <zorder>towerButton1</zorder>
+     <zorder>label_2</zorder>
+     <zorder>noMusic</zorder>
+     <zorder>pushButtonMonster</zorder>
     </widget>
    </widget>
   </widget>

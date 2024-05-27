@@ -1,10 +1,20 @@
 #ifndef MONSTER_H
 #define MONSTER_H
 
-class monster
-{
+#include <QWidget>
+#include <QLabel>
+
+
+class Monster: public QLabel {
+    Q_OBJECT
+
 public:
-    monster();
+    explicit Monster(QWidget *parent = nullptr);
+    void moveMonster(int x, int y);
+
+private:
+    int posX;
+    int posY;
 };
 
 #endif // MONSTER_H

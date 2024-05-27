@@ -5,6 +5,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include "tower.h"
+#include "monster.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -21,10 +22,12 @@ public:
 private slots:
     void showMenuPage();
     void showGamePage();
+    void moveMonster();
 
 private:
     Ui::MainWindow *ui;
     Tower *tower; // Moved tower declaration to the private section
+    Monster *monster;
 };
 
 #endif // MAINWINDOW_H

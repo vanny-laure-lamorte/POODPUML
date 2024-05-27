@@ -9,5 +9,9 @@
         <file>assets/img/Tower1.png</file>
         <file>assets/img/Tower2.png</file>
         <file>assets/img/Tower3.png</file>
+        <file>assets/img/music.png</file>
+        <file>assets/img/noMusic.png</file>
+        <file>assets/img/monster1.png</file>
     </qresource>
+    <qresource prefix="/new/prefix1"/>
 </RCC>
