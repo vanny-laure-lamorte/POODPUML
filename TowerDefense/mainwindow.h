@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QVBoxLayout>
+
+
 #include "tower.h"
 #include "monster.h"
 
@@ -22,12 +24,12 @@ public:
 private slots:
     void showMenuPage();
     void showGamePage();
-    void moveMonster();
+    void moveMonsters();
 
 private:
     Ui::MainWindow *ui;
     Tower *tower; // Moved tower declaration to the private section
-    Monster *monster;
+    QVector<Monster*> monsters;
 };
 
 #endif // MAINWINDOW_H
