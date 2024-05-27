@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QTimer>
+#include <QDebug>
 
 using namespace std;
 
@@ -19,23 +20,43 @@ MainWindow::MainWindow(QWidget *parent)
     // Initialize the Tower object
     tower = new Tower(this); // Ensure `this` is passed to access UI elements
 
-    // Initialize the Tower object
-    tower = new Tower(this);
-
+    //Monster Green
     Monster *monster1 = new Monster(":/assets/img/monster1.png", ui->pageGame);
-    monster1->move(100, 270); // Initial position of the monster
-    monster1->moveSpeed(1000); // Speed in milliseconds
+    monster1->initialPosition(100, 270); // Initial position
+    monster1->moveSpeed(980); // Speed
     monsters.append(monster1);
 
     Monster *monster2 = new Monster(":/assets/img/monster1.png", ui->pageGame);
-    monster2->move(200, 270); // Initial position of the monster
-    monster2->moveSpeed(800); // Speed in milliseconds
+    monster2->moveSpeed(1000); // Speed in milliseconds
+    monster2->initialPosition(100, 305);
     monsters.append(monster2);
 
-    Monster *monster3 = new Monster(":/assets/img/monster.png", ui->pageGame);
-    monster3->move(300, 270); // Initial position of the monster
-    monster3->moveSpeed(1200); // Speed in milliseconds
+    Monster *monster3 = new Monster(":/assets/img/monster1.png", ui->pageGame);
+    monster3->initialPosition(50,270);
+    monster3->moveSpeed(1000); // Speed in milliseconds
     monsters.append(monster3);
+
+    // Monster men
+    Monster *monster4 = new Monster(":/assets/img/monster2.png", ui->pageGame);
+    monster4->initialPosition(40, 300);
+    monster4->moveSpeed(980); // Speed in milliseconds
+    monsters.append(monster4);
+
+    Monster *monster5 = new Monster(":/assets/img/monster2.png", ui->pageGame);
+    monster5->initialPosition(70, 290);
+    monster5->moveSpeed(1000); // Speed in milliseconds
+    monsters.append(monster5);
+
+    // Monster Bat
+    Monster *monster6 = new Monster(":/assets/img/monster4.png", ui->pageGame);
+    monster6->initialPosition(100, 270);
+    monster6->moveSpeed(100); // Speed in milliseconds
+    monsters.append(monster6);
+
+    Monster *monster7 = new Monster(":/assets/img/monster4.png", ui->pageGame);
+    monster7->initialPosition(100, 300);
+    monster7->moveSpeed(80); // Speed in milliseconds
+    monsters.append(monster7);
 
     // Show all monsters
     for (Monster *monster : as_const(monsters)) {
@@ -73,6 +94,7 @@ void MainWindow::moveMonsters()
 
     for (Monster *monster : as_const(monsters)) {
         monster->moveMonster();
+        qDebug() << "Monster moved: " << monster;
     }
 
 }

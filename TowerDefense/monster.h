@@ -12,6 +12,7 @@ public:
     explicit Monster(const QString &imagePath, QWidget *parent = nullptr);
     void moveMonster();
     void moveSpeed(int speed);
+    void initialPosition(int x, int y);
 
 private:
     int posX;

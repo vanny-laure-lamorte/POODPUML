@@ -12,6 +12,8 @@
         <file>assets/img/music.png</file>
         <file>assets/img/noMusic.png</file>
         <file>assets/img/monster1.png</file>
+        <file>assets/img/monster4.png</file>
+        <file>assets/img/monster2.png</file>
     </qresource>
     <qresource prefix="/new/prefix1"/>
 </RCC>

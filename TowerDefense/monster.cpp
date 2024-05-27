@@ -26,6 +26,12 @@ void Monster::moveSpeed(int newSpeed) {
     moveTimer->setInterval(speed);
 }
 
+void Monster::initialPosition(int x, int y) {
+    posX = x;
+    posY = y;
+    move(posX, posY);
+}
+
 void Monster::moveMonster(){
     posX += 10; // Adjust movement increment as needed
     move(posX, posY);
