@@ -3,18 +3,21 @@
 
 #include <QWidget>
 #include <QLabel>
-
+#include <QTimer> //speed monsters
 
 class Monster: public QLabel {
     Q_OBJECT
 
 public:
-    explicit Monster(QWidget *parent = nullptr);
-    void moveMonster(int x, int y);
+    explicit Monster(const QString &imagePath, QWidget *parent = nullptr);
+    void moveMonster();
+    void moveSpeed(int speed);
 
 private:
     int posX;
     int posY;
+    int speed;
+    QTimer *moveTimer;
 };
 
 #endif // MONSTER_H

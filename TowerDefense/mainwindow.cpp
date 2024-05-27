@@ -22,21 +22,27 @@ MainWindow::MainWindow(QWidget *parent)
     // Initialize the Tower object
     tower = new Tower(this);
 
-    // Initialize multiple Monster objects
-    for (int i = 0; i < 5; ++i) { // Ceate 5 monsters
-        Monster *monster = new Monster(ui->pageGame);
-        monster->move(100 + i * 60, 270); // Adjust the initial positions to not overlap
+    Monster *monster1 = new Monster(":/assets/img/monster1.png", ui->pageGame);
+    monster1->move(100, 270); // Initial position of the monster
+    monster1->moveSpeed(1000); // Speed in milliseconds
+    monsters.append(monster1);
+
+    Monster *monster2 = new Monster(":/assets/img/monster1.png", ui->pageGame);
+    monster2->move(200, 270); // Initial position of the monster
+    monster2->moveSpeed(800); // Speed in milliseconds
+    monsters.append(monster2);
+
+    Monster *monster3 = new Monster(":/assets/img/monster.png", ui->pageGame);
+    monster3->move(300, 270); // Initial position of the monster
+    monster3->moveSpeed(1200); // Speed in milliseconds
+    monsters.append(monster3);
+
+    // Show all monsters
+    for (Monster *monster : as_const(monsters)) {
         monster->show();
-        monsters.append(monster);
     }
 
-    QTimer *timer = new QTimer(this);
-    connect(timer, &QTimer::timeout, this, &MainWindow::moveMonsters);
-    timer->start(100); // Move monsters every 100 ms
-
     connect(ui->pushButtonMonster, &QPushButton::clicked, this, &MainWindow::moveMonsters);
-
-
 }
 
 MainWindow::~MainWindow()
@@ -66,12 +72,7 @@ void MainWindow::moveMonsters()
     }
 
     for (Monster *monster : as_const(monsters)) {
-        static int dx = 10; // Increment for x position
-        static int dy = 0;  // Increment for y position
-        int x = monster->x() + dx;
-        int y = monster->y() + dy;
-        monster->moveMonster(x, y);
+        monster->moveMonster();
     }
-
 
 }

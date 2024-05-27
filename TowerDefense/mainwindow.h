@@ -5,7 +5,6 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-
 #include "tower.h"
 #include "monster.h"
 
