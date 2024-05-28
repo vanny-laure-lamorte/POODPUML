@@ -26,7 +26,7 @@ MainWindow::MainWindow(QWidget *parent)
     // Set initial gold display
     updateGoldLabel(player->getGold());
     // Initialize the Tower object
-    tower = new Tower(this); // Ensure `this` is passed to access UI elements
+    tower = new Tower(this, player); // Ensure `this` is passed to access UI elements
 
     //Monster Green
     Monster *monster1 = new Monster(":/assets/img/monster1.png", ui->pageGame);

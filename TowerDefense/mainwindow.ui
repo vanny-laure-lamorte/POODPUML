@@ -183,7 +183,7 @@ background-color: rgb(39, 174, 96);
        <string>Menu</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="towerUpgrade1">
+     <widget class="QPushButton" name="towerUpgrade1_1">
       <property name="geometry">
        <rect>
         <x>580</x>
@@ -199,7 +199,7 @@ background-color: rgb(39, 174, 96);
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="towerUpgrade2">
+     <widget class="QPushButton" name="towerUpgrade1_2">
       <property name="geometry">
        <rect>
         <x>700</x>
@@ -215,7 +215,7 @@ background-color: rgb(39, 174, 96);
        <string/>
       </property>
      </widget>
-     <widget class="QPushButton" name="towerUpgrade3">
+     <widget class="QPushButton" name="towerUpgrade1_3">
       <property name="geometry">
        <rect>
         <x>640</x>
@@ -377,18 +377,135 @@ background-color: rgb(39, 174, 96);
        <string>PushButton</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="towerButton2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>560</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="towerUpgrade2_3">
+      <property name="geometry">
+       <rect>
+        <x>1010</x>
+        <y>620</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="towerUpgrade2_1">
+      <property name="geometry">
+       <rect>
+        <x>950</x>
+        <y>500</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="towerUpgrade2_2">
+      <property name="geometry">
+       <rect>
+        <x>1070</x>
+        <y>500</y>
+        <width>61</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="tower2">
+      <property name="geometry">
+       <rect>
+        <x>1000</x>
+        <y>540</y>
+        <width>81</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="upgradeShop2">
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>480</y>
+        <width>221</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/circle.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
      <zorder>tower1</zorder>
      <zorder>upgradeShop1</zorder>
      <zorder>buttonMenu</zorder>
-     <zorder>towerUpgrade1</zorder>
-     <zorder>towerUpgrade2</zorder>
-     <zorder>towerUpgrade3</zorder>
+     <zorder>towerUpgrade1_1</zorder>
+     <zorder>towerUpgrade1_2</zorder>
+     <zorder>towerUpgrade1_3</zorder>
      <zorder>goldRect</zorder>
      <zorder>labelGold</zorder>
      <zorder>towerButton1</zorder>
      <zorder>label_2</zorder>
      <zorder>noMusic</zorder>
      <zorder>pushButtonMonster</zorder>
+     <zorder>tower2</zorder>
+     <zorder>upgradeShop2</zorder>
+     <zorder>towerUpgrade2_3</zorder>
+     <zorder>towerUpgrade2_1</zorder>
+     <zorder>towerUpgrade2_2</zorder>
+     <zorder>towerButton2</zorder>
     </widget>
    </widget>
   </widget>
