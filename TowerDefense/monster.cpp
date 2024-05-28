@@ -1,8 +1,9 @@
 #include "monster.h"
 #include <QPixmap>
 #include <QDebug>
+#include "healthbar.h"
 
-Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y)
+    Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y)
     : QLabel(parent), posX(0), posY(0), speed(1000), health(100)
 {
     QPixmap pixmap(imagePath);
@@ -15,10 +16,8 @@ Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y)
     setFixedSize(50, 50); // Adjust size as needed
 
     //health bar
-    healthBar = new QProgressBar(parent);
-    healthBar->setRange(0, 100);
-    healthBar->setValue(health);
-    healthBar->setGeometry(this->x(), this->y() - 10, 50, 5);
+    healthBar = new HealthBar(parent);
+    healthBar->move(posX, posY - 10);
     healthBar->show();
 
     moveTimer = new QTimer(this);
@@ -66,5 +65,5 @@ void Monster::moveMonster() {
 
 void Monster::setHealth(int newHealth) {
     health = newHealth;
-    healthBar->setValue(health);
+    healthBar->setHealth(newHealth);
 }

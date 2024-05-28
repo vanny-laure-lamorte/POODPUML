@@ -4,7 +4,8 @@
 #include <QWidget>
 #include <QLabel>
 #include <QTimer> //speed monsters
-#include <QProgressBar> // health bar
+
+class HealthBar;
 
 class Monster: public QLabel {
     Q_OBJECT
@@ -18,7 +19,6 @@ public:
 
     //health
     void setHealth(int health);
-
 public slots:
     void moveMonster();
 
@@ -28,9 +28,9 @@ private:
     int speed;
     QTimer *moveTimer;
 
-    //health bar
-    QProgressBar *healthBar;
+    //health
     int health;
+    HealthBar *healthBar;
 
 };
 

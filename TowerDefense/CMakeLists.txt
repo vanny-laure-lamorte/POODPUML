@@ -32,7 +32,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         src/tower/tower2.h src/tower/tower2.cpp
         src/tower/tower3.h src/tower/tower3.cpp
         src/tower/towermanager.h src/tower/towermanager.cpp
-
+        healthbar.cpp
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET TowerDefense APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
