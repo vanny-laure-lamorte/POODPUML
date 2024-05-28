@@ -29,40 +29,40 @@ MainWindow::MainWindow(QWidget *parent)
     tower = new Tower(this, player); // Ensure `this` is passed to access UI elements
 
     //Monster Green
-    Monster *monster1 = new Monster(":/assets/img/monster1.png", ui->pageGame);
-    monster1->initialPosition(100, 270); // Initial position
+    Monster *monster1 = new Monster(":/assets/img/monster1.png", ui->pageGame, x = 100, y = 270);
+    monster1->initialPosition(x, y); // Initial position
     monster1->moveSpeed(980); // Speed
     monsters.append(monster1);
 
-    Monster *monster2 = new Monster(":/assets/img/monster1.png", ui->pageGame);
-    monster2->moveSpeed(1000); // Speed in milliseconds
-    monster2->initialPosition(100, 305);
+    Monster *monster2 = new Monster(":/assets/img/monster1.png", ui->pageGame, x = 100, y = 305);
+    monster2->initialPosition(x, y);
+    monster2->moveSpeed(500); // Speed in milliseconds
     monsters.append(monster2);
 
-    Monster *monster3 = new Monster(":/assets/img/monster1.png", ui->pageGame);
-    monster3->initialPosition(50,270);
-    monster3->moveSpeed(1000); // Speed in milliseconds
+    Monster *monster3 = new Monster(":/assets/img/monster1.png", ui->pageGame, x= 50, y = 270);
+    monster3->initialPosition(x, y);
+    monster3->moveSpeed(500); // Speed in milliseconds
     monsters.append(monster3);
 
     // Monster men
-    Monster *monster4 = new Monster(":/assets/img/monster2.png", ui->pageGame);
-    monster4->initialPosition(40, 300);
+    Monster *monster4 = new Monster(":/assets/img/monster2.png", ui->pageGame, x = 40, y = 300);
+    monster4->initialPosition(x, y);
     monster4->moveSpeed(980); // Speed in milliseconds
     monsters.append(monster4);
 
-    Monster *monster5 = new Monster(":/assets/img/monster2.png", ui->pageGame);
-    monster5->initialPosition(70, 290);
-    monster5->moveSpeed(1000); // Speed in milliseconds
+    Monster *monster5 = new Monster(":/assets/img/monster2.png", ui->pageGame, x = 70, y = 290);
+    monster5->initialPosition(x, y);
+    monster5->moveSpeed(500); // Speed in milliseconds
     monsters.append(monster5);
 
     // Monster Bat
-    Monster *monster6 = new Monster(":/assets/img/monster4.png", ui->pageGame);
-    monster6->initialPosition(100, 270);
+    Monster *monster6 = new Monster(":/assets/img/monster4.png", ui->pageGame,x= 100, y = 270);
+    monster6->initialPosition(x, y);
     monster6->moveSpeed(100); // Speed in milliseconds
     monsters.append(monster6);
 
-    Monster *monster7 = new Monster(":/assets/img/monster4.png", ui->pageGame);
-    monster7->initialPosition(100, 300);
+    Monster *monster7 = new Monster(":/assets/img/monster4.png", ui->pageGame, x = 100, y = 300);
+    monster7->initialPosition(x, y);
     monster7->moveSpeed(80); // Speed in milliseconds
     monsters.append(monster7);
 
@@ -84,10 +84,10 @@ MainWindow::~MainWindow()
 
 void MainWindow::showGamePage()
 {
-    ui->stackedWidget->setCurrentWidget(ui->pageGame);
     for (Monster *monster : as_const(monsters)) {
         monster->show();
     }
+    ui->stackedWidget->setCurrentWidget(ui->pageGame);
 }
 
 void MainWindow::showMenuPage()

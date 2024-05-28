@@ -10,17 +10,21 @@ class Monster: public QLabel {
     Q_OBJECT
 
 public:
-    explicit Monster(const QString &imagePath, QWidget *parent = nullptr);
-    void moveMonster();
+    explicit Monster(const QString &imagePath, QWidget *parent = nullptr, int posX = 0, int posY = 0);
     void moveSpeed(int speed);
     void initialPosition(int x, int y);
+    int posX;
+    int posY;
 
     //health
     void setHealth(int health);
 
+public slots:
+    void moveMonster();
+
+
 private:
-    int posX;
-    int posY;
+
     int speed;
     QTimer *moveTimer;
 
@@ -28,8 +32,6 @@ private:
     QProgressBar *healthBar;
     int health;
 
-public slots:
-    void updatePosition();
 };
 
 #endif // MONSTER_H

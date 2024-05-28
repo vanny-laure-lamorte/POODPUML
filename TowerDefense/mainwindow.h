@@ -30,6 +30,8 @@ private:
     Player *player;
     void moveMonsters();
 
+    int x = 0, y = 0 ;
+
     Ui::MainWindow *ui;
     Tower *tower; // Moved tower declaration to the private section
     QVector<Monster*> monsters;

@@ -54,6 +54,7 @@ Tower::~Tower()
 // *** Base tower, display
 void Tower::onTowerButton1Clicked()
 {
+    qDebug() << "shop clicked";
     // Toggle visibility of the upgrade shop and buttons
     bool newVisibility = !upgradeShop1->isVisible();
     upgradeShop1->setVisible(newVisibility);
@@ -72,7 +73,7 @@ void Tower::onTowerButton2Clicked()
 
 void Tower::ontowerUpgrade1_1Clicked()
 {
-
+    qDebug() << "button1 clicked";
     if (player->getGold() >= 100) {
         player->setGold(player->getGold() - 100);
         tower1Level = 1;
@@ -83,6 +84,7 @@ void Tower::ontowerUpgrade1_1Clicked()
 
 void Tower::ontowerUpgrade1_2Clicked()
 {
+    qDebug() << "button2 clicked";
     if (player->getGold() >= 100) {
         player->setGold(player->getGold() - 100);
         tower1Level = 2;
@@ -104,6 +106,7 @@ void Tower::ontowerUpgrade1_3Clicked()
 void Tower::ontowerUpgrade2_1Clicked()
 {
 
+    qDebug() << "button1 clicked";
     if (player->getGold() >= 100) {
         player->setGold(player->getGold() - 100);
         tower2Level = 1;
@@ -134,16 +137,27 @@ void Tower::ontowerUpgrade2_3Clicked()
 
 void Tower::displayTower()
 {
+    qDebug() << "Displaying tower with level:" << tower1Level;
     if (tower1Level == 0) {
+        qDebug() << "Tower 1: Hammer1";
         tower1->setPixmap(QPixmap(":/assets/img/Hammer1.png"));
-    }
-    else if (tower1Level == 1) {
+    } else if (tower1Level == 1) {
+        qDebug() << "Tower 1: Tower1";
         tower1->setPixmap(QPixmap(":/assets/img/Tower1.png"));
     } else if (tower1Level == 2) {
-            tower1->setPixmap(QPixmap(":/assets/img/Tower2.png"));
+        qDebug() << "Tower 1: Tower2";
+        tower1->setPixmap(QPixmap(":/assets/img/Tower2.png"));
     } else if (tower1Level == 3) {
-            tower1->setPixmap(QPixmap(":/assets/img/Tower3.png"));
+        qDebug() << "Tower 1: Tower3";
+        tower1->setPixmap(QPixmap(":/assets/img/Tower3.png"));
     }
+
+    // Debug tower 1 upgrade buttons
+    qDebug() << "Upgrade shop 1 visible:" << upgradeShop1->isVisible();
+    qDebug() << "Tower upgrade 1_1 visible:" << towerUpgrade1_1->isVisible();
+    qDebug() << "Tower upgrade 1_2 visible:" << towerUpgrade1_2->isVisible();
+    qDebug() << "Tower upgrade 1_3 visible:" << towerUpgrade1_3->isVisible();
+
     if (tower2Level == 0) {
         tower2->setPixmap(QPixmap(":/assets/img/Hammer1.png"));
     }

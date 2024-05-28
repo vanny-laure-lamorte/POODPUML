@@ -490,22 +490,22 @@ background-color: rgb(39, 174, 96);
      </widget>
      <zorder>tower1</zorder>
      <zorder>upgradeShop1</zorder>
+     <zorder>upgradeShop2</zorder>
      <zorder>buttonMenu</zorder>
-     <zorder>towerUpgrade1_1</zorder>
-     <zorder>towerUpgrade1_2</zorder>
-     <zorder>towerUpgrade1_3</zorder>
      <zorder>goldRect</zorder>
      <zorder>labelGold</zorder>
-     <zorder>towerButton1</zorder>
      <zorder>label_2</zorder>
      <zorder>noMusic</zorder>
      <zorder>pushButtonMonster</zorder>
      <zorder>tower2</zorder>
-     <zorder>upgradeShop2</zorder>
+     <zorder>towerButton2</zorder>
+     <zorder>towerButton1</zorder>
+     <zorder>towerUpgrade1_3</zorder>
+     <zorder>towerUpgrade1_1</zorder>
+     <zorder>towerUpgrade1_2</zorder>
      <zorder>towerUpgrade2_3</zorder>
      <zorder>towerUpgrade2_1</zorder>
      <zorder>towerUpgrade2_2</zorder>
-     <zorder>towerButton2</zorder>
     </widget>
    </widget>
   </widget>

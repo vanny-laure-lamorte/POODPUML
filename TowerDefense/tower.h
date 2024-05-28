@@ -42,8 +42,8 @@ private:
     QPushButton *towerUpgrade2_3;
 
     Player *player;
-    int tower1Level;
-    int tower2Level;
+    int tower1Level = 0;
+    int tower2Level = 0;
 };
 
 #endif // TOWER_H
