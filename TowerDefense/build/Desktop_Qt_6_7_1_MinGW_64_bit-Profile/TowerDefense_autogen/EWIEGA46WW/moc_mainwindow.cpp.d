@@ -152,6 +152,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QProgressBar \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QVBoxLayout \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
@@ -163,6 +164,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qprogressbar.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtabwidget.h \
