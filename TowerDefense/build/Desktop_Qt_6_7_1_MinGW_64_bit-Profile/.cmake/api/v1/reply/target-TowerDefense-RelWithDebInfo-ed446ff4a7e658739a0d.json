@@ -75,13 +75,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 67,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 50,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
@@ -372,7 +372,8 @@
 				7,
 				9,
 				11,
-				14
+				12,
+				15
 			]
 		}
 	],
@@ -499,7 +500,8 @@
 				7,
 				9,
 				11,
-				14
+				12,
+				15
 			]
 		},
 		{
@@ -510,7 +512,7 @@
 				6,
 				8,
 				10,
-				12
+				13
 			]
 		},
 		{
@@ -519,15 +521,15 @@
 			[
 				4,
 				5,
-				13
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				15,
-				16
+				16,
+				17
 			]
 		}
 	],
@@ -598,6 +600,12 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "player.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "healthbar.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
