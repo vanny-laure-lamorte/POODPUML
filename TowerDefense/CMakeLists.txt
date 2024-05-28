@@ -26,6 +26,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ressources.qrc
         monster.h monster.cpp
         tower.h tower.cpp
+        player.h player.cpp
+        healthbar.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

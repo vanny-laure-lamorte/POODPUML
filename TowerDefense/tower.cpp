@@ -1,8 +1,9 @@
-#include "tower.h"
-#include <QPropertyAnimation>
+// Tower.cpp
 
-Tower::Tower(QWidget *parent)
-    : QWidget(parent)
+#include "tower.h"
+
+Tower::Tower(QWidget *parent, Player *player)
+    : QWidget(parent), player(player)
 {
     // Accessing existing buttons and labels from the UI designer
     towerButton1 = parent->findChild<QPushButton*>("towerButton1");
@@ -24,13 +25,12 @@ Tower::Tower(QWidget *parent)
     connect(towerUpgrade1, &QPushButton::clicked, this, &Tower::ontowerUpgrade1Clicked);
     connect(towerUpgrade2, &QPushButton::clicked, this, &Tower::ontowerUpgrade2Clicked);
     connect(towerUpgrade3, &QPushButton::clicked, this, &Tower::ontowerUpgrade3Clicked);
+    displayTower();
+}
 
-    // Create the animation object
-    animation = new QPropertyAnimation(tower1, "geometry");
-    animation->setDuration(1000); // Animation duration in milliseconds
-    animation->setStartValue(QRect(tower1->x(), tower1->y(), tower1->width(), tower1->height()));
-    animation->setEndValue(QRect(tower1->x(), tower1->y() - 20, tower1->width(), tower1->height()));
-    animation->setEasingCurve(QEasingCurve::OutBounce); // Easing curve for the animation
+Tower::~Tower()
+{
+    // Clean up
 }
 
 void Tower::onTowerButton1Clicked()
@@ -42,44 +42,49 @@ void Tower::onTowerButton1Clicked()
     towerUpgrade2->setVisible(newVisibility);
     towerUpgrade3->setVisible(newVisibility);
 
-    // Start the animation
-    animation->start();
+    // Optional: add animation for showing/hiding
 }
 
 void Tower::ontowerUpgrade1Clicked()
 {
-    towerLevel = 1;
-    displayTower();
+    if (player->getGold() >= 100) {
+        player->setGold(player->getGold() - 100);
+        towerLevel = 1;
+        displayTower();
+        upgradeShop1->setVisible(false);
+    }
 }
 
 void Tower::ontowerUpgrade2Clicked()
 {
-    towerLevel = 2;
-    displayTower();
+    if (player->getGold() >= 100) {
+        player->setGold(player->getGold() - 100);
+        towerLevel = 2;
+        displayTower();
+        upgradeShop1->setVisible(false);
+    }
 }
 
 void Tower::ontowerUpgrade3Clicked()
 {
-    towerLevel = 3;
-    displayTower();
+    if (player->getGold() >= 100) {
+        player->setGold(player->getGold() - 100);
+        towerLevel = 3;
+        displayTower();
+        upgradeShop1->setVisible(false);
+    }
 }
 
 void Tower::displayTower()
 {
-    if (towerLevel == 0)
-        tower1->setPixmap(QPixmap(":/assets/img/noTower.png"));
-    else if (towerLevel == 1)
+    if (towerLevel == 0) {
+        tower1->setPixmap(QPixmap(":/assets/img/Hammer1.png"));
+    }
+    else if (towerLevel == 1) {
         tower1->setPixmap(QPixmap(":/assets/img/Tower1.png"));
-    else if (towerLevel == 2)
-        tower1->setPixmap(QPixmap(":/assets/img/Tower2.png"));
-    else if (towerLevel == 3)
-        tower1->setPixmap(QPixmap(":/assets/img/Tower3.png"));
-
-    // Start the animation
-    animation->start();
-}
-
-Tower::~Tower()
-{
-    delete animation;
+    } else if (towerLevel == 2) {
+            tower1->setPixmap(QPixmap(":/assets/img/Tower2.png"));
+    } else if (towerLevel == 3) {
+            tower1->setPixmap(QPixmap(":/assets/img/Tower3.png"));
+    }
 }
