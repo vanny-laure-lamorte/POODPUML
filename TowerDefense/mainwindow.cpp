@@ -13,14 +13,24 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
 
+    // Initialize the Player object
+    player = new Player(this);
+
     // Initialize the Tower object
-    tower = new Tower(this); // Ensure `this` is passed to access UI elements
+    tower = new Tower(this, player);
+
+    // Connect the player's goldChanged signal to update the label
+    connect(player, &Player::goldChanged, this, &MainWindow::updateGoldLabel);
+
+    // Set initial gold display
+    updateGoldLabel(player->getGold());
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
     delete tower; // Delete the tower instance
+    delete player; // Delete the player instance
 }
 
 void MainWindow::showGamePage()
@@ -31,4 +41,10 @@ void MainWindow::showGamePage()
 void MainWindow::showMenuPage()
 {
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
+}
+
+void MainWindow::updateGoldLabel(int newGold)
+{
+    ui->labelGold->setStyleSheet("font-size: 20px; color: black;font-weight: 800"); // Adjust the size as needed
+    ui->labelGold->setText(QString::number(newGold));
 }

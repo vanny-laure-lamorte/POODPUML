@@ -9,5 +9,11 @@
         <file>assets/img/Tower1.png</file>
         <file>assets/img/Tower2.png</file>
         <file>assets/img/Tower3.png</file>
+        <file>assets/img/Sign.png</file>
+        <file>assets/img/Hammer1.png</file>
+        <file>assets/img/Hammer2.png</file>
+        <file>assets/img/Hammer3.png</file>
+        <file>assets/img/Hammer4.png</file>
+        <file>assets/img/Hammer5.png</file>
     </qresource>
 </RCC>

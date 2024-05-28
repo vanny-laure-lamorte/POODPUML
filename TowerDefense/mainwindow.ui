@@ -256,17 +256,14 @@ background-color: rgb(39, 174, 96);
      <widget class="QLabel" name="tower1">
       <property name="geometry">
        <rect>
-        <x>640</x>
-        <y>340</y>
-        <width>61</width>
-        <height>71</height>
+        <x>630</x>
+        <y>330</y>
+        <width>81</width>
+        <height>91</height>
        </rect>
       </property>
       <property name="text">
        <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap resource="ressources.qrc">:/assets/img/noTower.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -297,12 +294,46 @@ background-color: rgb(39, 174, 96);
        <bool>true</bool>
       </property>
      </widget>
+     <widget class="QLabel" name="labelGold">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>690</y>
+        <width>61</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;500&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="goldRect">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>680</y>
+        <width>151</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/Sign.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <zorder>tower1</zorder>
      <zorder>upgradeShop1</zorder>
      <zorder>buttonMenu</zorder>
      <zorder>towerUpgrade1</zorder>
      <zorder>towerUpgrade2</zorder>
      <zorder>towerUpgrade3</zorder>
-     <zorder>tower1</zorder>
+     <zorder>goldRect</zorder>
+     <zorder>labelGold</zorder>
      <zorder>towerButton1</zorder>
     </widget>
    </widget>

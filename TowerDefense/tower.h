@@ -2,16 +2,16 @@
 #define TOWER_H
 
 #include <QWidget>
-#include <QLabel>
 #include <QPushButton>
-#include <QPropertyAnimation>
+#include <QLabel>
+#include "player.h"
 
 class Tower : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit Tower(QWidget *parent = nullptr);
+    explicit Tower(QWidget *parent = nullptr, Player *player = nullptr);
     ~Tower();
 
 private slots:
@@ -21,20 +21,16 @@ private slots:
     void ontowerUpgrade3Clicked();
 
 private:
-    bool tower_visible = false;
-    int towerLevel = 0;
+    void displayTower();
 
     QPushButton *towerButton1;
     QLabel *tower1;
-
+    QLabel *upgradeShop1;
     QPushButton *towerUpgrade1;
     QPushButton *towerUpgrade2;
     QPushButton *towerUpgrade3;
-    QLabel *upgradeShop1;
-
-    QPropertyAnimation *animation;
-
-    void displayTower();
+    Player *player;
+    int towerLevel;
 };
 
 #endif // TOWER_H
