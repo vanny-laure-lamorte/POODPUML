@@ -27,6 +27,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         monster.h monster.cpp
         tower.h tower.cpp
         player.h player.cpp
+        src/tower/abstracttower.h src/tower/abstracttower.cpp
+        src/tower/tower1.h src/tower/tower1.cpp
+        src/tower/tower2.h src/tower/tower2.cpp
+        src/tower/tower3.h src/tower/tower3.cpp
+        src/tower/towermanager.h src/tower/towermanager.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
