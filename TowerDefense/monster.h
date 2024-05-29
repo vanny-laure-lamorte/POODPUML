@@ -11,7 +11,7 @@ class Monster: public QLabel {
     Q_OBJECT
 
 public:
-    explicit Monster(const QString &imagePath, QWidget *parent = nullptr, int posX = 0, int posY = 0);
+    explicit Monster(const QString &imagePath, QWidget *parent = nullptr, int posX = 0, int posY = 0, int laneNumber=0);
     void moveSpeed(int speed);
     void initialPosition(int x, int y);
     int posX;
@@ -19,6 +19,8 @@ public:
 
     //health
     void setHealth(int health);
+    // Lane 1
+    int laneNumber;
 public slots:
     void moveMonster();
 
@@ -31,6 +33,8 @@ private:
     //health
     int health;
     HealthBar *healthBar;
+
+
 
 };
 

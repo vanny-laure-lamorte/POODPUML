@@ -2,7 +2,6 @@
     <qresource prefix="/">
         <file>assets/img/homeBackground.jpg</file>
         <file>assets/img/gameBackground.png</file>
-        <file>assets/img/monster.png</file>
         <file>assets/img/gameBackground2.png</file>
         <file>assets/img/noTower.png</file>
         <file>assets/img/circle.png</file>
@@ -22,6 +21,14 @@
         <file>assets/img/monster2.png</file>
         <file>assets/img/Life.png</file>
         <file>assets/img/gameBackground3.png</file>
+        <file>assets/img/monster11.png</file>
+        <file>assets/img/monster12.png</file>
+        <file>assets/img/monster13.png</file>
+        <file>assets/img/monster21.png</file>
+        <file>assets/img/monster22.png</file>
+        <file>assets/img/monster23.png</file>
+        <file>assets/img/monster14.png</file>
+        <file>assets/img/monster15.png</file>
+        <file>assets/img/monster16.png</file>
     </qresource>
-    <qresource prefix="/new/prefix1"/>
 </RCC>
