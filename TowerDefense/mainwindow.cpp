@@ -20,11 +20,13 @@ MainWindow::MainWindow(QWidget *parent)
     // Initialize the Player object
     player = new Player(this);
 
-
     connect(player, &Player::goldChanged, this, &MainWindow::updateGoldLabel);
+    connect(player, &Player::lifeChanged, this, &MainWindow::updateLifeLabel);
 
-    // Set initial gold display
     updateGoldLabel(player->getGold());
+    updateLifeLabel(player->getLife());
+
+
     // Initialize the Tower object
     tower = new Tower(this, player); // Ensure `this` is passed to access UI elements
 
@@ -99,6 +101,12 @@ void MainWindow::updateGoldLabel(int newGold)
 {
     ui->labelGold->setStyleSheet("font-size: 20px; color: black;font-weight: 800"); // Adjust the size as needed
     ui->labelGold->setText(QString::number(newGold));
+}
+
+void MainWindow::updateLifeLabel(int newLife)
+{
+    ui->labelLife->setStyleSheet("font-size: 20px; color: black; font-weight: 800"); // Adjust the size as needed
+    ui->labelLife->setText(QString::number(newLife));
 }
 
 void MainWindow::moveMonsters()

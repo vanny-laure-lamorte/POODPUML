@@ -12,11 +12,16 @@ public:
     int getGold() const;
     void setGold(int value);
 
+    int getLife() const;
+    void setLife(int value);
+
 signals:
     void goldChanged(int newGold);
+    void lifeChanged(int newLife);
 
 private:
-    int gold = 500;
+    int gold = 400;
+    int life = 500;  // Example initial value for life
 };
 
 #endif // PLAYER_H

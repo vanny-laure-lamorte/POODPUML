@@ -16,3 +16,16 @@ void Player::setGold(int value)
         emit goldChanged(gold);
     }
 }
+
+int Player::getLife() const
+{
+    return life;
+}
+
+void Player::setLife(int value)
+{
+    if (life != value) {
+        life = value;
+        emit lifeChanged(life);
+    }
+}

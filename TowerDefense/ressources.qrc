@@ -20,6 +20,7 @@
         <file>assets/img/monster1.png</file>
         <file>assets/img/monster4.png</file>
         <file>assets/img/monster2.png</file>
+        <file>assets/img/Life.png</file>
     </qresource>
     <qresource prefix="/new/prefix1"/>
 </RCC>
