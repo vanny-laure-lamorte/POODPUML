@@ -165,7 +165,7 @@ background-color: rgb(39, 174, 96);
     <widget class="QWidget" name="pageGame">
      <property name="styleSheet">
       <string notr="true">QWidget#pageGame {
-        border-image: url(:/assets/img/gameBackground2.png) 0 0 0 0 stretch stretch;
+    border-image: url(:/assets/img/gameBackground3.png) 0 0 0 0 stretch stretch;
     background-repeat: no-repeat;
     background-position: center;
 }</string>
