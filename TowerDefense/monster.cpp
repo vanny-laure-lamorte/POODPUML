@@ -3,8 +3,8 @@
 #include <QDebug>
 #include "healthbar.h"
 
-    Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y)
-    : QLabel(parent), posX(0), posY(0), speed(1000), health(100)
+    Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y, int laneNumber)
+    : QLabel(parent), posX(0), posY(0), speed(1000), health(100), laneNumber(laneNumber)
 {
     QPixmap pixmap(imagePath);
     if (pixmap.isNull()) {
@@ -40,27 +40,60 @@ void Monster::initialPosition(int x, int y) {
 }
 
 void Monster::moveMonster() {
-    // Update monster's position based on your logic
-    if (posX < 150) {
-        posX += 10; // Adjust movement increment as needed
-    } else if (posX < 197) {
-        posY += 10; // Adjust movement increment as needed
-        posX += 5; // Adjust movement increment as needed
-    } else if (posX < 378) {
-        posX += 10; // Adjust movement increment as needed
-    } else if (posX < 420){
-        posY += 9; // Adjust movement increment as needed
-        posX += 4; // Adjust movement increment as needed
-    } else if (posX < 700){
-        posX += 10; // Adjust movement increment as needed
-    } else {
-        posX += 0;
-        posY += 0;
+
+    // Lane1
+    if (laneNumber == 1) {
+        if (posX < 150) {
+            posX += 10;
+        } else if (posX < 197) {
+            posY += 10;
+            posX += 5;
+        } else if (posX < 378) {
+            posX += 10;
+        } else if (posX < 420){
+            posY += 9;
+            posX += 4;
+        } else if (posX < 700){
+            posX += 10;
+        } else {
+            posX += 0;
+            posY += 0;
+        }
+    }
+
+    //Lane 2
+    else if (laneNumber == 2) {
+        if (posY < 180) {
+            posY += 2;
+        } else if (posX> 795) {
+            posX -= 2;
+        } else if (posY < 350) {
+            posY += 2;
+        } else {
+            posX += 0;
+            posY += 0;
+        }
+    }
+
+    // Lane 3
+    else if (laneNumber == 3) {
+        if (posX > 1300) {
+            posX -= 5;
+        } else if (posY < 465) {
+            posY += 5;
+        } else if (posX > 890) {
+            posX -= 5;
+        } else {
+            posX += 0;
+            posY += 0;
+        }
     }
     move(posX, posY);
+
     // Update health bar position
     healthBar->move(posX, posY - 10);
 }
+
 
 
 void Monster::setHealth(int newHealth) {
