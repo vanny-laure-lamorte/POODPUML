@@ -58,6 +58,9 @@ void Tower::onTowerButton1Clicked()
     // Toggle visibility of the upgrade shop and buttons
     bool newVisibility = !upgradeShop1->isVisible();
     upgradeShop1->setVisible(newVisibility);
+    towerUpgrade1_1->setVisible(newVisibility);
+    towerUpgrade1_2->setVisible(newVisibility);
+    towerUpgrade1_3->setVisible(newVisibility);
     upgradeShop2->setVisible(false);
 
 }
@@ -67,6 +70,9 @@ void Tower::onTowerButton2Clicked()
     // Toggle visibility of the upgrade shop and buttons
     bool newVisibility = !upgradeShop2->isVisible();
     upgradeShop2->setVisible(newVisibility);
+    towerUpgrade2_1->setVisible(newVisibility);
+    towerUpgrade2_2->setVisible(newVisibility);
+    towerUpgrade2_3->setVisible(newVisibility);
     upgradeShop1->setVisible(false);
 
 }
