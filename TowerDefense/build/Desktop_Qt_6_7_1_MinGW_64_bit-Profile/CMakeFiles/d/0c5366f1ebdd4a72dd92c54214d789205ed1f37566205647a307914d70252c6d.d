@@ -1,5 +1,7 @@
 TowerDefense_autogen/timestamp: \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QElapsedTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QObject \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QTime \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
@@ -20,6 +22,7 @@ TowerDefense_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearraylist.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayview.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qcalendar.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qchar.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare_impl.h \
@@ -33,7 +36,9 @@ TowerDefense_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qcontiguouscache.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdarwinhelpers.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdatastream.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qdatetime.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qdebug.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qelapsedtimer.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qendian.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qexceptionhandling.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qflags.h \
@@ -53,6 +58,7 @@ TowerDefense_autogen/timestamp: \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qline.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qlist.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qlogging.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmalloc.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmap.h \
@@ -585,15 +591,5 @@ TowerDefense_autogen/timestamp: \
   C:/Qt/projet/POODPUML/TowerDefense/player.cpp \
   C:/Qt/projet/POODPUML/TowerDefense/player.h \
   C:/Qt/projet/POODPUML/TowerDefense/ressources.qrc \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/abstracttower.cpp \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/abstracttower.h \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower1.cpp \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower1.h \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower2.cpp \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower2.h \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower3.cpp \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower3.h \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/towermanager.cpp \
-  C:/Qt/projet/POODPUML/TowerDefense/src/tower/towermanager.h \
   C:/Qt/projet/POODPUML/TowerDefense/tower.cpp \
   C:/Qt/projet/POODPUML/TowerDefense/tower.h

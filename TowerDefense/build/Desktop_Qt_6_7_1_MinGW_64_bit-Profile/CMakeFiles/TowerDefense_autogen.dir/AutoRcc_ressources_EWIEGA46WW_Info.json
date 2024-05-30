@@ -7,11 +7,13 @@
 	"INCLUDE_DIR" : "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/timer.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster12.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower3.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/music.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower2.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Sign.png",
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Life.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster21.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster15.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster13.png",
@@ -34,6 +36,7 @@
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer2.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster4.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground.png",
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground3.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower1.png"
 	],
 	"LOCK_FILE" : "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Lock.lock",

@@ -5,6 +5,8 @@
 #include <QLabel>
 #include <QPushButton>
 #include <QTimer>
+#include <QTime>
+#include <QElapsedTimer>
 
 class HealthBar;
 
@@ -20,6 +22,7 @@ public:
 
 public slots:
     void moveMonster();
+    void updateCountdown();
 
 private slots:
     void waveButton();
@@ -38,13 +41,19 @@ private:
     bool wave2Move = false;
     bool wave3Move = false;
 
+    bool wave2Coutdown = false;
+    bool wave3Coutdown = false;
+
     QTimer *moveTimer;
     QTimer *waveTimer;
     QTimer *wave1Timer;
     QTimer *wave2Timer;
     QTimer *wave3Timer;
-    QPushButton *pushButtonMonster;
+    QPushButton *ButtonMonster1;
+    QLabel *timeLabel1;
 
+    QTime *time;
+    QTimer *countdown;
 
     HealthBar *healthBar;
 };

@@ -364,7 +364,7 @@ background-color: rgb(39, 174, 96);
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButtonMonster">
+     <widget class="QPushButton" name="ButtonMonster1">
       <property name="geometry">
        <rect>
         <x>260</x>
@@ -373,8 +373,12 @@ background-color: rgb(39, 174, 96);
         <height>71</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;
+</string>
+      </property>
       <property name="text">
-       <string>Wave</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="towerButton2">
@@ -520,6 +524,44 @@ background-color: rgb(39, 174, 96);
        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;500&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
+     <widget class="QLabel" name="imgButtonMonster1">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>10</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/timer.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="timeLabel1">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>80</y>
+        <width>71</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 22px;
+font-weight: 800;
+color: black;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
      <zorder>tower1</zorder>
      <zorder>upgradeShop1</zorder>
      <zorder>upgradeShop2</zorder>
@@ -528,7 +570,6 @@ background-color: rgb(39, 174, 96);
      <zorder>labelGold</zorder>
      <zorder>label_2</zorder>
      <zorder>noMusic</zorder>
-     <zorder>pushButtonMonster</zorder>
      <zorder>tower2</zorder>
      <zorder>towerButton2</zorder>
      <zorder>towerButton1</zorder>
@@ -540,6 +581,9 @@ background-color: rgb(39, 174, 96);
      <zorder>towerUpgrade2_2</zorder>
      <zorder>lifeRect</zorder>
      <zorder>labelLife</zorder>
+     <zorder>imgButtonMonster1</zorder>
+     <zorder>ButtonMonster1</zorder>
+     <zorder>timeLabel1</zorder>
     </widget>
    </widget>
   </widget>

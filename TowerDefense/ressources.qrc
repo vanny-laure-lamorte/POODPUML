@@ -30,5 +30,6 @@
         <file>assets/img/monster14.png</file>
         <file>assets/img/monster15.png</file>
         <file>assets/img/monster16.png</file>
+        <file>assets/img/timer.png</file>
     </qresource>
 </RCC>

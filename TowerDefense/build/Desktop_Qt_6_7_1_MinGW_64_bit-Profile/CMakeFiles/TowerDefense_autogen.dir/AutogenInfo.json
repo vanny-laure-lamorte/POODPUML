@@ -320,36 +320,6 @@
 			null
 		],
 		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/abstracttower.h",
-			"MU",
-			"LMW75URCH2/moc_abstracttower.cpp",
-			null
-		],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower1.h",
-			"MU",
-			"LMW75URCH2/moc_tower1.cpp",
-			null
-		],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower2.h",
-			"MU",
-			"LMW75URCH2/moc_tower2.cpp",
-			null
-		],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower3.h",
-			"MU",
-			"LMW75URCH2/moc_tower3.cpp",
-			null
-		],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/towermanager.h",
-			"MU",
-			"LMW75URCH2/moc_towermanager.cpp",
-			null
-		],
-		[
 			"C:/Qt/projet/POODPUML/TowerDefense/tower.h",
 			"MU",
 			"EWIEGA46WW/moc_tower.cpp",
@@ -419,7 +389,7 @@
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 4,
+	"PARALLEL" : 10,
 	"PARSE_CACHE_FILE" : "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "C:/Qt/6.7.1/mingw_64/./bin/uic.exe",
@@ -433,19 +403,6 @@
 		[ "C:/Qt/projet/POODPUML/TowerDefense/mainwindow.cpp", "MU", null ],
 		[ "C:/Qt/projet/POODPUML/TowerDefense/monster.cpp", "MU", null ],
 		[ "C:/Qt/projet/POODPUML/TowerDefense/player.cpp", "MU", null ],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/abstracttower.cpp",
-			"MU",
-			null
-		],
-		[ "C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower1.cpp", "MU", null ],
-		[ "C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower2.cpp", "MU", null ],
-		[ "C:/Qt/projet/POODPUML/TowerDefense/src/tower/tower3.cpp", "MU", null ],
-		[
-			"C:/Qt/projet/POODPUML/TowerDefense/src/tower/towermanager.cpp",
-			"MU",
-			null
-		],
 		[ "C:/Qt/projet/POODPUML/TowerDefense/tower.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],

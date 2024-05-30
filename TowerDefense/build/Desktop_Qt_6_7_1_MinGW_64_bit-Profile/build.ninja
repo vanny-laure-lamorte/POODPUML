@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: TowerDefense
-# Configurations: RelWithDebInfo
+# Configurations: Profile
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = RelWithDebInfo
+CONFIGURATION = Profile
 # =============================================================================
 # Include auxiliary files.
 
@@ -49,106 +49,66 @@ cmake_ninja_workdir = C$:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1
 
 build cmake_object_order_depends_target_TowerDefense: phony || TowerDefense_autogen TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp TowerDefense_autogen/mocs_compilation.cpp TowerDefense_autogen/timestamp TowerDefense_autogen_timestamp_deps
 
-build CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\TowerDefense_autogen\mocs_compilation.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\TowerDefense_autogen
 
-build CMakeFiles/TowerDefense.dir/main.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/main.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/main.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/main.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\main.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/mainwindow.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/mainwindow.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/mainwindow.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/mainwindow.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\mainwindow.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/monster.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/monster.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/monster.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/monster.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\monster.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/tower.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/tower.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/tower.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/tower.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\tower.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/player.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/player.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/player.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/player.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\player.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/src/tower/abstracttower.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/src/tower/abstracttower.cpp || cmake_object_order_depends_target_TowerDefense
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\TowerDefense.dir\src\tower\abstracttower.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\TowerDefense.dir
-  OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\src\tower
-
-build CMakeFiles/TowerDefense.dir/src/tower/tower1.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/src/tower/tower1.cpp || cmake_object_order_depends_target_TowerDefense
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\TowerDefense.dir\src\tower\tower1.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\TowerDefense.dir
-  OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\src\tower
-
-build CMakeFiles/TowerDefense.dir/src/tower/tower2.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/src/tower/tower2.cpp || cmake_object_order_depends_target_TowerDefense
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\TowerDefense.dir\src\tower\tower2.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\TowerDefense.dir
-  OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\src\tower
-
-build CMakeFiles/TowerDefense.dir/src/tower/tower3.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/src/tower/tower3.cpp || cmake_object_order_depends_target_TowerDefense
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\TowerDefense.dir\src\tower\tower3.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\TowerDefense.dir
-  OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\src\tower
-
-build CMakeFiles/TowerDefense.dir/src/tower/towermanager.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/src/tower/towermanager.cpp || cmake_object_order_depends_target_TowerDefense
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\TowerDefense.dir\src\tower\towermanager.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
-  INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
-  OBJECT_DIR = CMakeFiles\TowerDefense.dir
-  OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\src\tower
-
-build CMakeFiles/TowerDefense.dir/healthbar.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/healthbar.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/healthbar.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/healthbar.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\healthbar.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir
 
-build CMakeFiles/TowerDefense.dir/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_RelWithDebInfo C$:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp || cmake_object_order_depends_target_TowerDefense
+build CMakeFiles/TowerDefense.dir/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp.obj: CXX_COMPILER__TowerDefense_unscanned_Profile C$:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp || cmake_object_order_depends_target_TowerDefense
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\TowerDefense.dir\TowerDefense_autogen\EWIEGA46WW\qrc_ressources.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG -std=gnu++17 -fdiagnostics-color=always
+  FLAGS = -DQT_QML_DEBUG -std=gnu++17 -fdiagnostics-color=always
   INCLUDES = -IC:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include -isystem C:/Qt/6.7.1/mingw_64/include/QtCore -isystem C:/Qt/6.7.1/mingw_64/include -isystem C:/Qt/6.7.1/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.1/mingw_64/include/QtWidgets -isystem C:/Qt/6.7.1/mingw_64/include/QtGui
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
   OBJECT_FILE_DIR = CMakeFiles\TowerDefense.dir\TowerDefense_autogen\EWIEGA46WW
@@ -161,8 +121,8 @@ build CMakeFiles/TowerDefense.dir/TowerDefense_autogen/EWIEGA46WW/qrc_ressources
 #############################################
 # Link the executable TowerDefense.exe
 
-build TowerDefense.exe: CXX_EXECUTABLE_LINKER__TowerDefense_RelWithDebInfo CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.obj CMakeFiles/TowerDefense.dir/main.cpp.obj CMakeFiles/TowerDefense.dir/mainwindow.cpp.obj CMakeFiles/TowerDefense.dir/monster.cpp.obj CMakeFiles/TowerDefense.dir/tower.cpp.obj CMakeFiles/TowerDefense.dir/player.cpp.obj CMakeFiles/TowerDefense.dir/src/tower/abstracttower.cpp.obj CMakeFiles/TowerDefense.dir/src/tower/tower1.cpp.obj CMakeFiles/TowerDefense.dir/src/tower/tower2.cpp.obj CMakeFiles/TowerDefense.dir/src/tower/tower3.cpp.obj CMakeFiles/TowerDefense.dir/src/tower/towermanager.cpp.obj CMakeFiles/TowerDefense.dir/healthbar.cpp.obj CMakeFiles/TowerDefense.dir/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp.obj | C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.1/mingw_64/lib/libQt6EntryPoint.a || TowerDefense_autogen TowerDefense_autogen_timestamp_deps
-  FLAGS = -DQT_QML_DEBUG -O2 -g -DNDEBUG
+build TowerDefense.exe: CXX_EXECUTABLE_LINKER__TowerDefense_Profile CMakeFiles/TowerDefense.dir/TowerDefense_autogen/mocs_compilation.cpp.obj CMakeFiles/TowerDefense.dir/main.cpp.obj CMakeFiles/TowerDefense.dir/mainwindow.cpp.obj CMakeFiles/TowerDefense.dir/monster.cpp.obj CMakeFiles/TowerDefense.dir/tower.cpp.obj CMakeFiles/TowerDefense.dir/player.cpp.obj CMakeFiles/TowerDefense.dir/healthbar.cpp.obj CMakeFiles/TowerDefense.dir/TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp.obj | C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.1/mingw_64/lib/libQt6EntryPoint.a || TowerDefense_autogen TowerDefense_autogen_timestamp_deps
+  FLAGS = -DQT_QML_DEBUG
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a  C:/Qt/6.7.1/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.1/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.1/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\TowerDefense.dir
@@ -255,7 +215,7 @@ build TowerDefense_autogen: phony CMakeFiles/TowerDefense_autogen TowerDefense_a
 # Custom command for TowerDefense_autogen\timestamp
 
 build TowerDefense_autogen/timestamp TowerDefense_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}TowerDefense_autogen/timestamp ${cmake_ninja_workdir}TowerDefense_autogen/mocs_compilation.cpp: CUSTOM_COMMAND C$:/Qt/6.7.1/mingw_64/./bin/moc.exe C$:/Qt/6.7.1/mingw_64/./bin/uic.exe || TowerDefense_autogen_timestamp_deps
-  COMMAND = cmd.exe /C "cd /D C:\Qt\projet\POODPUML\TowerDefense\build\Desktop_Qt_6_7_1_MinGW_64_bit-Profile && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutogenInfo.json RelWithDebInfo && C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/timestamp && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile C:/Qt/projet/POODPUML/TowerDefense C:/Qt/projet/POODPUML/TowerDefense C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/deps C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/d/0c5366f1ebdd4a72dd92c54214d789205ed1f37566205647a307914d70252c6d.d"
+  COMMAND = cmd.exe /C "cd /D C:\Qt\projet\POODPUML\TowerDefense\build\Desktop_Qt_6_7_1_MinGW_64_bit-Profile && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutogenInfo.json Profile && C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/timestamp && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_transform_depfile Ninja gccdepfile C:/Qt/projet/POODPUML/TowerDefense C:/Qt/projet/POODPUML/TowerDefense C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/deps C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/d/0c5366f1ebdd4a72dd92c54214d789205ed1f37566205647a307914d70252c6d.d"
   DESC = Automatic MOC and UIC for target TowerDefense
   depfile = C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/d/0c5366f1ebdd4a72dd92c54214d789205ed1f37566205647a307914d70252c6d.d
   restat = 1
@@ -264,8 +224,8 @@ build TowerDefense_autogen/timestamp TowerDefense_autogen/mocs_compilation.cpp |
 #############################################
 # Custom command for TowerDefense_autogen\EWIEGA46WW\qrc_ressources.cpp
 
-build TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp | ${cmake_ninja_workdir}TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp: CUSTOM_COMMAND C$:/Qt/projet/POODPUML/TowerDefense/ressources.qrc CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster12.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower3.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/music.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Sign.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster21.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster15.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster13.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/noTower.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer4.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster23.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster16.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/circle.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster11.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/noMusic.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer1.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster14.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster1.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer5.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster22.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/homeBackground.jpg C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer3.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster4.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower1.png C$:/Qt/6.7.1/mingw_64/./bin/rcc.exe || TowerDefense_autogen TowerDefense_autogen_timestamp_deps
-  COMMAND = cmd.exe /C "cd /D C:\Qt\projet\POODPUML\TowerDefense\build\Desktop_Qt_6_7_1_MinGW_64_bit-Profile && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json RelWithDebInfo"
+build TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp | ${cmake_ninja_workdir}TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp: CUSTOM_COMMAND C$:/Qt/projet/POODPUML/TowerDefense/ressources.qrc CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json C$:/Qt/projet/POODPUML/TowerDefense/assets/img/timer.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster12.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower3.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/music.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Sign.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Life.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster21.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster15.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster13.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/noTower.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer4.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster23.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster16.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/circle.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster11.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/noMusic.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer1.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster14.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster1.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer5.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster22.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/homeBackground.jpg C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer3.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer2.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/monster4.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/gameBackground3.png C$:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower1.png C$:/Qt/6.7.1/mingw_64/./bin/rcc.exe || TowerDefense_autogen TowerDefense_autogen_timestamp_deps
+  COMMAND = cmd.exe /C "cd /D C:\Qt\projet\POODPUML\TowerDefense\build\Desktop_Qt_6_7_1_MinGW_64_bit-Profile && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/CMakeFiles/TowerDefense_autogen.dir/AutoRcc_ressources_EWIEGA46WW_Info.json Profile"
   DESC = Automatic RCC for ressources.qrc
   restat = 1
 
@@ -273,7 +233,7 @@ build TowerDefense_autogen/EWIEGA46WW/qrc_ressources.cpp | ${cmake_ninja_workdir
 #############################################
 # Phony custom command for CMakeFiles\TowerDefense_autogen_timestamp_deps
 
-build CMakeFiles/TowerDefense_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/TowerDefense_autogen_timestamp_deps: phony C$:/Qt/6.7.1/mingw_64/./bin/moc.exe C$:/Qt/6.7.1/mingw_64/./bin/uic.exe C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a
+build CMakeFiles/TowerDefense_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/TowerDefense_autogen_timestamp_deps: phony C$:/Qt/6.7.1/mingw_64/./bin/moc.exe C$:/Qt/6.7.1/mingw_64/./bin/uic.exe C$:/Qt/6.7.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.7.1/mingw_64/lib/libQt6Core.a
 
 
 #############################################
@@ -317,7 +277,7 @@ build .qtc/package-manager/auto-setup.cmake C$:/Qt/6.7.1/mingw_64/lib/cmake/Qt6C
 # Clean additional files.
 
 build CMakeFiles/clean.additional: CLEAN_ADDITIONAL
-  CONFIG = RelWithDebInfo
+  CONFIG = Profile
 
 
 #############################################

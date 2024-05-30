@@ -26,15 +26,21 @@
     moveTimer->start(speed);
 
     // Timer for wave control
+    countdown = new QTimer(this);
+    countdown->start(1000);
+    connect(countdown, SIGNAL(timeout()), this, SLOT(updateCountdown()));
+    time = new QTime(0, 0, 20);
+    timeLabel1 = parent->findChild<QLabel*>("timeLabel1");
+
     waveTimer = new QTimer(this);
     connect(waveTimer, &QTimer::timeout, this, &Monster::startWaves);
     waveTimer->setSingleShot(true); // Only trigger once
     waveTimer->start(20000);
 
     // Button to start waves
-    pushButtonMonster = parent->findChild<QPushButton*>("pushButtonMonster");
+    ButtonMonster1 = parent->findChild<QPushButton*>("ButtonMonster1");
 
-    connect(pushButtonMonster, &QPushButton::clicked, this, &Monster::waveButton);
+    connect(ButtonMonster1, &QPushButton::clicked, this, &Monster::waveButton);
 
     // Timers for individual waves
     wave1Timer = new QTimer(this);
@@ -148,3 +154,31 @@ void Monster::startWave2() {
 void Monster::startWave3() {
     wave3Move = true;
 }
+
+void Monster::updateCountdown() {
+    if (!wave1Move){
+        *time = time->addSecs(-1);
+        timeLabel1->setText(time->toString("m:ss"));
+    }
+    else if (!wave2Coutdown){
+        *time = QTime(0, 0, 5);
+        wave2Coutdown = true;
+    }
+    else if (!wave2Move){
+        *time = time->addSecs(-1);
+        timeLabel1->setText(time->toString("m:ss"));
+    }
+    else if (!wave3Coutdown){
+        *time = QTime(0, 0, 5);
+        wave3Coutdown = true;
+    }
+    else if (!wave3Move){
+        *time = time->addSecs(-1);
+        timeLabel1->setText(time->toString("m:ss"));
+    }
+    else{
+        timeLabel1->setText(time->toString(""));
+    }
+}
+// test
+
