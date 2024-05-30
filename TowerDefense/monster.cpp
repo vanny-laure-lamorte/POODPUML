@@ -21,8 +21,34 @@
     healthBar->show();
 
     moveTimer = new QTimer(this);
+
     connect(moveTimer, &QTimer::timeout, this, &Monster::moveMonster);
     moveTimer->start(speed);
+
+    // Timer for wave control
+    waveTimer = new QTimer(this);
+    connect(waveTimer, &QTimer::timeout, this, &Monster::startWaves);
+    waveTimer->setSingleShot(true); // Only trigger once
+    waveTimer->start(20000);
+
+    // Button to start waves
+    pushButtonMonster = parent->findChild<QPushButton*>("pushButtonMonster");
+
+    connect(pushButtonMonster, &QPushButton::clicked, this, &Monster::waveButton);
+
+    // Timers for individual waves
+    wave1Timer = new QTimer(this);
+    wave1Timer->setSingleShot(true);
+    connect(wave1Timer, &QTimer::timeout, this, &Monster::startWave1);
+
+    wave2Timer = new QTimer(this);
+    wave2Timer->setSingleShot(true);
+    connect(wave2Timer, &QTimer::timeout, this, &Monster::startWave2);
+
+    wave3Timer = new QTimer(this);
+    wave3Timer->setSingleShot(true);
+    connect(wave3Timer, &QTimer::timeout, this, &Monster::startWave3);
+
 }
 
 void Monster::moveSpeed(int newSpeed) {
@@ -42,7 +68,7 @@ void Monster::initialPosition(int x, int y) {
 void Monster::moveMonster() {
 
     // Lane1
-    if (laneNumber == 1) {
+    if (laneNumber == 1 && wave1Move) {
         if (posX < 150) {
             posX += 10;
         } else if (posX < 197) {
@@ -62,7 +88,7 @@ void Monster::moveMonster() {
     }
 
     //Lane 2
-    else if (laneNumber == 2) {
+    else if (laneNumber == 2 && wave2Move) {
         if (posY < 180) {
             posY += 2;
         } else if (posX> 795) {
@@ -76,7 +102,7 @@ void Monster::moveMonster() {
     }
 
     // Lane 3
-    else if (laneNumber == 3) {
+    else if (laneNumber == 3 && wave3Move) {
         if (posX > 1300) {
             posX -= 5;
         } else if (posY < 465) {
@@ -94,9 +120,31 @@ void Monster::moveMonster() {
     healthBar->move(posX, posY - 10);
 }
 
-
-
 void Monster::setHealth(int newHealth) {
     health = newHealth;
     healthBar->setHealth(newHealth);
+}
+
+void Monster::waveButton() {
+    wave1Timer->start(0);
+    wave2Timer->start(5000);
+    wave3Timer->start(10000);
+}
+
+void Monster::startWaves() {
+    wave1Timer->start(0);
+    wave2Timer->start(5000);
+    wave3Timer->start(10000);
+}
+
+void Monster::startWave1() {
+    wave1Move = true;
+}
+
+void Monster::startWave2() {
+    wave2Move = true;
+}
+
+void Monster::startWave3() {
+    wave3Move = true;
 }
