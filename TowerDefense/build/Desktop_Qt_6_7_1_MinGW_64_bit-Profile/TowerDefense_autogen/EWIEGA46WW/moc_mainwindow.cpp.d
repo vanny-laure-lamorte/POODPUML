@@ -60,6 +60,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmargins.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmath.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmetacontainer.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qmetaobject.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qmetatype.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qminmax.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qnamespace.h \
@@ -150,6 +151,16 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtGui/qtransform.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/QAudioOutput \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/QMediaPlayer \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qaudio.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qaudiooutput.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qmediaenumdebug.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qmediaplayer.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qtaudio.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qtmultimedia-config.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qtmultimediaexports.h \
+  C:/Qt/6.7.1/mingw_64/include/QtMultimedia/qtmultimediaglobal.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QMainWindow \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
@@ -370,5 +381,6 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
   C:/Qt/projet/POODPUML/TowerDefense/monster.h \
+  C:/Qt/projet/POODPUML/TowerDefense/music.h \
   C:/Qt/projet/POODPUML/TowerDefense/player.h \
   C:/Qt/projet/POODPUML/TowerDefense/tower.h

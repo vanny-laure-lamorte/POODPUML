@@ -150,9 +150,12 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtGui/qwindowdefs_win.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QLabel \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/QPushButton \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qabstractbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qlabel.h \
+  C:/Qt/6.7.1/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qsizepolicy.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.7.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \

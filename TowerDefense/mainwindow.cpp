@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+
 #include <QTimer>
 #include <QDebug>
 
@@ -7,7 +8,8 @@ using namespace std;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
-    ui(new Ui::MainWindow)
+    ui(new Ui::MainWindow),
+    music(new Music(this))
 {
     ui->setupUi(this);
     this->setWindowTitle("Tower Defense");
@@ -128,6 +130,13 @@ MainWindow::MainWindow(QWidget *parent)
         monster->show();
     }
 
+
+    // Music
+    music->pause();
+    connect(ui->btnPlay, &QPushButton::clicked, music, &Music::play);
+    connect(ui->btnMute, &QPushButton::clicked, music, &Music::pause);
+
+
 }
 
 MainWindow::~MainWindow()
@@ -136,6 +145,7 @@ MainWindow::~MainWindow()
     delete tower; // Delete the tower instance
     delete player; // Delete the player instance
     qDeleteAll(monsters); // Delete all monsters
+    delete music; // Delete music
 }
 
 void MainWindow::showGamePage()
