@@ -20,6 +20,9 @@ public:
     void setHealth(int health);
     void startWaves();
 
+    void initializeTimers();
+    bool gameLaunched = false;
+
 public slots:
     void moveMonster();
     void updateCountdown();

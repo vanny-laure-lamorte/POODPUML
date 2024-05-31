@@ -36,6 +36,7 @@ private:
     Ui::MainWindow *ui;
     Tower *tower; // Moved tower declaration to the private section
     QVector<Monster*> monsters;
+    bool gameLaunched = false; // Add this line
 };
 
 #endif // MAINWINDOW_H
