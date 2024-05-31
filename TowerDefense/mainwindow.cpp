@@ -153,11 +153,13 @@ void MainWindow::showGamePage()
     for (Monster *monster : as_const(monsters)) {
         monster->show();
     }
+    music->play();
     ui->stackedWidget->setCurrentWidget(ui->pageGame);
 }
 
 void MainWindow::showMenuPage()
 {
+    music->pause();
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
 }
 
