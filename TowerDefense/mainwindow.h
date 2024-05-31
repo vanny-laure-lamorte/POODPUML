@@ -8,6 +8,7 @@
 #include "tower.h"
 #include "player.h"
 #include "monster.h"
+#include "music.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -35,6 +36,7 @@ private:
 
     Ui::MainWindow *ui;
     Tower *tower; // Moved tower declaration to the private section
+    Music *music;
     QVector<Monster*> monsters;
     bool gameLaunched = false; // Add this line
 };

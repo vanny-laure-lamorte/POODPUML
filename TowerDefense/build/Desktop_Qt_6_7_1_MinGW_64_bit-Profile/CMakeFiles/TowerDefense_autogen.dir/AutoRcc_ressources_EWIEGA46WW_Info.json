@@ -7,6 +7,7 @@
 	"INCLUDE_DIR" : "C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/include",
 	"INPUTS" : 
 	[
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/music/music1.mp3",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/timer.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster12.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower3.png",

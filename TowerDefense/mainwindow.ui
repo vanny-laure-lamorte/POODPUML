@@ -326,7 +326,7 @@ background-color: rgb(39, 174, 96);
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_2">
+     <widget class="QLabel" name="music">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -554,9 +554,38 @@ background-color: rgb(39, 174, 96);
       </property>
       <property name="styleSheet">
        <string notr="true">font-size: 22px;
-font-weight: 800;
-color: black;
-</string>
+    font-weight: 800;
+    color: black;
+        </string>
+        </property>
+     </widget>
+     <widget class="QPushButton" name="btnPlay">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>22</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: transparent;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnMute">
+      <property name="geometry">
+       <rect>
+        <x>108</x>
+        <y>24</y>
+        <width>61</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background:transparent;</string>
       </property>
       <property name="text">
        <string/>
@@ -568,7 +597,7 @@ color: black;
      <zorder>buttonMenu</zorder>
      <zorder>goldRect</zorder>
      <zorder>labelGold</zorder>
-     <zorder>label_2</zorder>
+     <zorder>music</zorder>
      <zorder>noMusic</zorder>
      <zorder>tower2</zorder>
      <zorder>towerButton2</zorder>
@@ -584,6 +613,8 @@ color: black;
      <zorder>imgButtonMonster1</zorder>
      <zorder>ButtonMonster1</zorder>
      <zorder>timeLabel1</zorder>
+     <zorder>btnPlay</zorder>
+     <zorder>btnMute</zorder>
     </widget>
    </widget>
   </widget>
