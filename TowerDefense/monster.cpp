@@ -178,8 +178,6 @@
     }
 
     void Monster::initializeTimers(){
-        qDebug() << "init";
-
         // Timer for wave control
         countdown = new QTimer(this);
         countdown->start(1000);

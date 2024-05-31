@@ -157,7 +157,6 @@ void MainWindow::showGamePage()
     ui->stackedWidget->setCurrentWidget(ui->pageGame);
 
     if (!gameLaunched) {
-        qDebug() << "ok";
         // Initialize timers for each monster
         for (Monster *monster : as_const(monsters)) {
             monster->initializeTimers();
