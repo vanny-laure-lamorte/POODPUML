@@ -1,121 +1,135 @@
-    #include "monster.h"
-    #include <QPixmap>
-    #include <QDebug>
-    #include "healthbar.h"
+#include "monster.h"
+#include <QPixmap>
+#include <QDebug>
+#include "healthbar.h"
 
-        Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y, int laneNumber)
-        : QLabel(parent), posX(0), posY(0), speed(1000), health(100), laneNumber(laneNumber)
-    {
-        QPixmap pixmap(imagePath);
-        if (pixmap.isNull()) {
-            qDebug() << "Failed to load monster image!";
+Monster::Monster(const QString &imagePath, QWidget *parent, int x, int y,int speed, int laneNumber, bool attacking)
+    : QLabel(parent), posX(x), posY(y), speed(1000), health(100), laneNumber(laneNumber), attacking(attacking) // Initialize attacking
+{
+    QPixmap pixmap(imagePath);
+    if (pixmap.isNull()) {
+        qDebug() << "Failed to load monster image!";
+    } else {
+        setPixmap(pixmap);
+    }
+    setScaledContents(true);
+    setFixedSize(50, 50); // Adjust size as needed
+
+    //health bar
+    healthBar = new HealthBar(parent);
+    healthBar->move(posX, posY - 10);
+    healthBar->show();
+
+    moveTimer = new QTimer(this);
+
+    connect(moveTimer, &QTimer::timeout, this, &Monster::moveMonster);
+    moveTimer->start(speed);
+
+    timeLabel1 = parent->findChild<QLabel*>("timeLabel1");
+
+
+    // Button to start waves
+    ButtonMonster1 = parent->findChild<QPushButton*>("ButtonMonster1");
+
+    connect(ButtonMonster1, &QPushButton::clicked, this, &Monster::waveButton);
+
+    // Timers for individual waves
+    wave1Timer = new QTimer(this);
+    wave1Timer->setSingleShot(true);
+    connect(wave1Timer, &QTimer::timeout, this, &Monster::startWave1);
+
+    wave2Timer = new QTimer(this);
+    wave2Timer->setSingleShot(true);
+    connect(wave2Timer, &QTimer::timeout, this, &Monster::startWave2);
+
+    wave3Timer = new QTimer(this);
+    wave3Timer->setSingleShot(true);
+    connect(wave3Timer, &QTimer::timeout, this, &Monster::startWave3);
+}
+
+QList<Monster*> Monster::generateMonsters(QWidget *parent) {
+    QList<Monster*> monsters;
+
+    // Generate monsters for lane 1
+    monsters.append(new Monster(":/assets/img/monster1.png", parent, 100, 270, 980, 1));
+    monsters.append(new Monster(":/assets/img/monster1.png", parent, 100, 305, 500, 1));
+    monsters.append(new Monster(":/assets/img/monster1.png", parent, 50, 270, 500, 1));
+    monsters.append(new Monster(":/assets/img/monster2.png", parent, 40, 300, 980,  1));
+    monsters.append(new Monster(":/assets/img/monster2.png", parent, 70, 290, 500, 1));
+    monsters.append(new Monster(":/assets/img/monster4.png", parent, 100, 270, 100, 1));
+    monsters.append(new Monster(":/assets/img/monster4.png", parent, 100, 300, 80, 1));
+
+    // Generate monsters for lane 2
+    monsters.append(new Monster(":/assets/img/monster11.png", parent, 1140, 0, 100, 2));
+    monsters.append(new Monster(":/assets/img/monster12.png", parent, 1150, 0, 70, 2));
+    monsters.append(new Monster(":/assets/img/monster13.png", parent, 1170, 0, 50, 2));
+    monsters.append(new Monster(":/assets/img/monster14.png", parent, 1150, 2, 50, 2));
+    monsters.append(new Monster(":/assets/img/monster15.png", parent, 1165, 50, 50, 2));
+
+    // Generate monsters for lane 3
+    monsters.append(new Monster(":/assets/img/monster21.png", parent, 1485, 290, 70, 3));
+    monsters.append(new Monster(":/assets/img/monster22.png", parent, 1495, 310, 60, 3));
+    monsters.append(new Monster(":/assets/img/monster23.png", parent, 1510, 305, 70, 3));
+    monsters.append(new Monster(":/assets/img/monster23.png", parent, 1510, 315, 70, 3));
+    monsters.append(new Monster(":/assets/img/monster23.png", parent, 1480, 300, 70, 3));
+
+    return monsters;
+}
+
+void Monster::moveMonster() {
+    // Lane1
+    if (laneNumber == 1 && wave1Move) {
+        if (posX < 150) {
+            posX += 10;
+        } else if (posX < 197) {
+            posY += 10;
+            posX += 5;
+        } else if (posX < 378) {
+            posX += 10;
+        } else if (posX < 420){
+            posY += 9;
+            posX += 4;
+        } else if (posX < 700){
+            posX += 10;
         } else {
-            setPixmap(pixmap);
+            // reachedEnd = true;
+            attacking = true;
         }
-        setScaledContents(true);
-        setFixedSize(50, 50); // Adjust size as needed
-
-        //health bar
-        healthBar = new HealthBar(parent);
-        healthBar->move(posX, posY - 10);
-        healthBar->show();
-
-        moveTimer = new QTimer(this);
-
-        connect(moveTimer, &QTimer::timeout, this, &Monster::moveMonster);
-        moveTimer->start(speed);
-
-        timeLabel1 = parent->findChild<QLabel*>("timeLabel1");
-
-
-        // Button to start waves
-        ButtonMonster1 = parent->findChild<QPushButton*>("ButtonMonster1");
-
-        connect(ButtonMonster1, &QPushButton::clicked, this, &Monster::waveButton);
-
-        // Timers for individual waves
-        wave1Timer = new QTimer(this);
-        wave1Timer->setSingleShot(true);
-        connect(wave1Timer, &QTimer::timeout, this, &Monster::startWave1);
-
-        wave2Timer = new QTimer(this);
-        wave2Timer->setSingleShot(true);
-        connect(wave2Timer, &QTimer::timeout, this, &Monster::startWave2);
-
-        wave3Timer = new QTimer(this);
-        wave3Timer->setSingleShot(true);
-        connect(wave3Timer, &QTimer::timeout, this, &Monster::startWave3);
-
     }
 
-    void Monster::moveSpeed(int newSpeed) {
-        speed = newSpeed;
-        moveTimer->setInterval(speed);
+    // Lane 2
+    else if (laneNumber == 2 && wave2Move) {
+        if (posY < 180) {
+            posY += 2;
+        } else if (posX > 795) {
+            posX -= 2;
+        } else if (posY < 350) {
+            posY += 2;
+        } else {
+            // reachedEnd = true;
+            attacking = true;
+        }
     }
 
-    void Monster::initialPosition(int x, int y) {
-        posX = x;
-        posY = y;
-        move(posX, posY);
-
-        //health bar
-        healthBar->move(posX, posY - 10);
+    // Lane 3
+    else if (laneNumber == 3 && wave3Move) {
+        if (posX > 1300) {
+            posX -= 5;
+        } else if (posY < 465) {
+            posY += 5;
+        } else if (posX > 890) {
+            posX -= 5;
+        } else {
+            // reachedEnd = true;
+            attacking = true;
+        }
     }
 
-    void Monster::moveMonster() {
+    move(posX, posY);
 
-        // Lane1
-        if (laneNumber == 1 && wave1Move) {
-            if (posX < 150) {
-                posX += 10;
-            } else if (posX < 197) {
-                posY += 10;
-                posX += 5;
-            } else if (posX < 378) {
-                posX += 10;
-            } else if (posX < 420){
-                posY += 9;
-                posX += 4;
-            } else if (posX < 700){
-                posX += 10;
-            } else {
-                posX += 0;
-                posY += 0;
-            }
-        }
-
-        //Lane 2
-        else if (laneNumber == 2 && wave2Move) {
-            if (posY < 180) {
-                posY += 2;
-            } else if (posX> 795) {
-                posX -= 2;
-            } else if (posY < 350) {
-                posY += 2;
-            } else {
-                posX += 0;
-                posY += 0;
-            }
-        }
-
-        // Lane 3
-        else if (laneNumber == 3 && wave3Move) {
-            if (posX > 1300) {
-                posX -= 5;
-            } else if (posY < 465) {
-                posY += 5;
-            } else if (posX > 890) {
-                posX -= 5;
-            } else {
-                posX += 0;
-                posY += 0;
-            }
-        }
-        move(posX, posY);
-
-        // Update health bar position
-        healthBar->move(posX, posY - 10);
-    }
+    // Update health bar position
+    healthBar->move(posX, posY - 10);
+}
 
     void Monster::setHealth(int newHealth) {
         health = newHealth;
@@ -147,7 +161,6 @@
     }
 
     void Monster::updateCountdown() {
-
         if (!wave1Move){
             *time = time->addSecs(-1);
         }

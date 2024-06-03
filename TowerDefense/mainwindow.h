@@ -27,10 +27,10 @@ private slots:
     void showGamePage();
     void updateGoldLabel(int newGold);
     void updateLifeLabel(int newLife);
+    void attack();
 
 private:
     Player *player;
-    void moveMonsters();
 
     int x = 0, y = 0 ;
 
@@ -39,6 +39,9 @@ private:
     Music *music;
     QVector<Monster*> monsters;
     bool gameLaunched = false; // Add this line
+    QTimer *attackTimer;
+
+
 };
 
 #endif // MAINWINDOW_H
