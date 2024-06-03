@@ -557,7 +557,7 @@ background-color: rgb(39, 174, 96);
     font-weight: 800;
     color: black;
         </string>
-        </property>
+      </property>
      </widget>
      <widget class="QPushButton" name="btnPlay">
       <property name="geometry">
@@ -591,6 +591,25 @@ background-color: rgb(39, 174, 96);
        <string/>
       </property>
      </widget>
+     <widget class="QLabel" name="baseAttacked">
+      <property name="geometry">
+       <rect>
+        <x>715</x>
+        <y>414</y>
+        <width>200</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/assets/img/base2.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
      <zorder>tower1</zorder>
      <zorder>upgradeShop1</zorder>
      <zorder>upgradeShop2</zorder>
@@ -615,6 +634,7 @@ background-color: rgb(39, 174, 96);
      <zorder>timeLabel1</zorder>
      <zorder>btnPlay</zorder>
      <zorder>btnMute</zorder>
+     <zorder>baseAttacked</zorder>
     </widget>
    </widget>
   </widget>

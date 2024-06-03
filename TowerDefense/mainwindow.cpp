@@ -1,7 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include <QTimer>
 #include <QDebug>
 
 using namespace std;
@@ -28,16 +27,33 @@ MainWindow::MainWindow(QWidget *parent)
     updateGoldLabel(player->getGold());
     updateLifeLabel(player->getLife());
 
-
     // Initialize the Tower object
-    tower = new Tower(this, player); // Ensure `this` is passed to access UI elements
+    tower = new Tower(this, player);
 
-    monsters = Monster::generateMonsters(ui->pageGame);
+    monsters = Monster::generateMonsters(ui->pageGame, player);
     attackTimer = new QTimer(this);
     attackTimer->start(1000);
+    blinkTimer = new QTimer(this);
+    blinkTimer->setInterval(50); // Blink interval (milliseconds)
+    connect(blinkTimer, &QTimer::timeout, this, &MainWindow::blinkBaseAttacked);
+
+    qDebug() << "Attempting to find baseAttacked label...";
+    baseAttacked = ui->pageGame->findChild<QLabel*>("baseAttacked");
+
+    baseAttacked->setVisible(false);
 
     connect(attackTimer, &QTimer::timeout, this, &MainWindow::attack);
 
+    resizeImage = new QTimer(this);
+    connect(resizeImage, &QTimer::timeout, this, &MainWindow::resizeGameOverImage);
+
+    gameOverimage = QPixmap(":/assets/img/gameOver.png");
+    gameOverLabel = new QLabel(this);
+    gameOverLabel->setPixmap(gameOverimage.scaled(imageX, imageY, Qt::KeepAspectRatio));
+    gameOverLabel->setVisible(false);
+
+    // Position the gameOverLabel at the center of the window (adjust as needed)
+    gameOverLabel->move(750 - imageX / 2, 375 - imageY / 2);
 
     // Show all monsters
     for (Monster *monster : monsters) {
@@ -48,16 +64,15 @@ MainWindow::MainWindow(QWidget *parent)
     music->pause();
     connect(ui->btnPlay, &QPushButton::clicked, music, &Music::play);
     connect(ui->btnMute, &QPushButton::clicked, music, &Music::pause);
-
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete tower; // Delete the tower instance
-    delete player; // Delete the player instance
-    qDeleteAll(monsters); // Delete all monsters
-    delete music; // Delete music
+    delete tower;
+    delete player;
+    qDeleteAll(monsters);
+    delete music;
 }
 
 void MainWindow::showGamePage()
@@ -69,13 +84,13 @@ void MainWindow::showGamePage()
     ui->stackedWidget->setCurrentWidget(ui->pageGame);
 
     if (!gameLaunched) {
-        // Initialize timers for each monster
         for (Monster *monster : monsters) {
             monster->initializeTimers();
         }
         gameLaunched = true;
     }
 }
+
 void MainWindow::showMenuPage()
 {
     music->pause();
@@ -84,20 +99,53 @@ void MainWindow::showMenuPage()
 
 void MainWindow::updateGoldLabel(int newGold)
 {
-    ui->labelGold->setStyleSheet("font-size: 20px; color: black;font-weight: 800"); // Adjust the size as needed
+    ui->labelGold->setStyleSheet("font-size: 20px; color: black;font-weight: 800");
     ui->labelGold->setText(QString::number(newGold));
 }
 
 void MainWindow::updateLifeLabel(int newLife)
 {
-    ui->labelLife->setStyleSheet("font-size: 20px; color: black; font-weight: 800"); // Adjust the size as needed
+    ui->labelLife->setStyleSheet("font-size: 20px; color: black; font-weight: 800");
     ui->labelLife->setText(QString::number(newLife));
 }
 
-void MainWindow::attack(){
+void MainWindow::attack()
+{
     for (Monster *monster : monsters) {
-        if (monster->attacking){
-            player->setLife(player->getLife() - 1);
+        if (player->getLife() > 0) {
+            if (monster->attacking) {
+                player->setLife(player->getLife() - 1);
+                blinkTimer->start();
+            }
+        } else {
+            if (!player->gameOver) {
+                player->gameOver = true;
+            }
+                gameOverLabel->setVisible(true);
+                resizeImage->start(3);
+
         }
+    }
+}
+
+void MainWindow::resizeGameOverImage()
+{
+    if (imageX < 700) {
+        imageX += 1;  // Adjust the increment as needed
+        imageY += 1;  // Adjust the increment as needed
+        gameOverLabel->move(750 - imageX / 2, 375 - imageY / 2);
+        gameOverLabel->setPixmap(gameOverimage.scaled(imageX, imageY, Qt::KeepAspectRatio));
+        gameOverLabel->resize(imageX, imageY);
+    } else {
+        resizeImage->stop();
+    }
+}
+
+void MainWindow::blinkBaseAttacked()
+{
+    if (baseAttacked->isVisible()) {
+        baseAttacked->setVisible(false);
+    } else {
+        baseAttacked->setVisible(true);
     }
 }

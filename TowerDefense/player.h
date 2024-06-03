@@ -14,6 +14,7 @@ public:
 
     int getLife() const;
     void setLife(int value);
+    bool gameOver = false;
 
 signals:
     void goldChanged(int newGold);
@@ -21,7 +22,7 @@ signals:
 
 private:
     int gold = 400;
-    int life = 500;  // Example initial value for life
+    int life = 10;  // Example initial value for life
 };
 
 #endif // PLAYER_H
