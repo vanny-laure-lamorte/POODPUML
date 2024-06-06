@@ -1,5 +1,4 @@
 // Tower.cpp
-
 #include "tower.h"
 #include <qdebug.h>
 
@@ -43,6 +42,7 @@ Tower::Tower(QWidget *parent, Player *player)
     connect(towerUpgrade2_3, &QPushButton::clicked, this, &Tower::ontowerUpgrade2_3Clicked);
 
     displayTower();
+    TowerPositionsDamage();
 
 }
 
@@ -175,3 +175,13 @@ void Tower::displayTower()
         tower2->setPixmap(QPixmap(":/assets/img/Tower3.png"));
     }
 }
+
+void Tower::TowerPositionsDamage()
+{
+    QPoint tower1Pos = tower1->pos();
+    QPoint tower2Pos = tower2->pos();
+
+    qDebug() << "Tower 1 position: x =" << tower1Pos.x() << ", y =" << tower1Pos.y();
+    qDebug() << "Tower 2 position: x =" << tower2Pos.x() << ", y =" << tower2Pos.y();
+}
+

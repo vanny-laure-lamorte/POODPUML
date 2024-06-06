@@ -44,6 +44,9 @@ private:
     Player *player;
     int tower1Level = 0;
     int tower2Level = 0;
+
+    // Damage
+    void TowerPositionsDamage();
 };
 
 #endif // TOWER_H

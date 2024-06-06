@@ -45,8 +45,8 @@ private:
     QTimer *wave3Timer;
     QPushButton *pushButtonMonster;
 
-
     HealthBar *healthBar;
+    void ReduceHealth();
 };
 
 #endif // MONSTER_H

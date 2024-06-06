@@ -7,14 +7,17 @@ class HealthBar : public QWidget {
     Q_OBJECT
 
 public:
-    explicit HealthBar(QWidget *parent = nullptr);
+    HealthBar(QWidget *parent = nullptr);
     void setHealth(int newHealth);
+    void updatePosition(int x, int y);
 
 protected:
     void paintEvent(QPaintEvent *event) override;
 
 private:
     int health;
+    int monsterPosX;
+    int monsterPosY;
 };
 
 #endif // HEALTHBAR_H
