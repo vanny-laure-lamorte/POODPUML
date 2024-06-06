@@ -26,6 +26,7 @@ Monster::Monster(const QString &imagePath, QWidget *parent, Player *player, int 
     moveTimer->start(speed);
 
     timeLabel1 = parent->findChild<QLabel*>("timeLabel1");
+    waveCounterLabel = parent->findChild<QLabel*>("waveCounterLabel");
 
 
     // Button to start waves
@@ -163,24 +164,32 @@ void Monster::startWave3() {
 }
 
 void Monster::updateCountdown() {
-    if (!wave1Move) {
-        *time = time->addSecs(-1);
-    } else if (!wave2Coutdown) {
-        *time = QTime(0, 0, 20);
-        wave2Coutdown = true;
-    } else if (!wave2Move) {
-        *time = time->addSecs(-1);
-    } else if (!wave3Coutdown) {
-        *time = QTime(0, 0, 20);
-        wave3Coutdown = true;
-    } else if (!wave3Move) {
-        *time = time->addSecs(-1);
-    } else {
-        timeLabel1->setText(time->toString(""));
+    if (!player->gameOver){
+        if (!wave1Move) {
+            *time = time->addSecs(-1);
+        } else if (!wave2Coutdown) {
+            *time = QTime(0, 0, 20);
+            wave2Coutdown = true;
+            waveCounterLabel->setText("Wave 2 / 3");
+        } else if (!wave2Move) {
+            *time = time->addSecs(-1);
+        } else if (!wave3Coutdown) {
+            *time = QTime(0, 0, 20);
+            wave3Coutdown = true;
+            waveCounterLabel->setText("Wave 3 / 3");
+        } else if (!wave3Move) {
+            *time = time->addSecs(-1);
+        } else {
+            timeLabel1->setText(time->toString(""));
+        }
+        if (*time >= QTime(0, 0, 1)) {
+            timeLabel1->setText(time->toString("m:ss"));
+        } else {
+            timeLabel1->setText(time->toString(""));
+        }
     }
-    if (*time >= QTime(0, 0, 1)) {
-        timeLabel1->setText(time->toString("m:ss"));
-    } else {
+    else {
+        waveCounterLabel->setText("");
         timeLabel1->setText(time->toString(""));
     }
 }

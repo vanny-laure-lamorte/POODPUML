@@ -59,6 +59,7 @@ private:
     QTimer *wave3Timer;
     QPushButton *ButtonMonster1;
     QLabel *timeLabel1;
+    QLabel *waveCounterLabel;
 
     QTime *time;
     QTimer *countdown;

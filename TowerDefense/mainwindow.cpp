@@ -34,10 +34,9 @@ MainWindow::MainWindow(QWidget *parent)
     attackTimer = new QTimer(this);
     attackTimer->start(1000);
     blinkTimer = new QTimer(this);
-    blinkTimer->setInterval(50); // Blink interval (milliseconds)
+    blinkTimer->setInterval(100); // Blink interval (milliseconds)
     connect(blinkTimer, &QTimer::timeout, this, &MainWindow::blinkBaseAttacked);
 
-    qDebug() << "Attempting to find baseAttacked label...";
     baseAttacked = ui->pageGame->findChild<QLabel*>("baseAttacked");
 
     baseAttacked->setVisible(false);
@@ -143,9 +142,11 @@ void MainWindow::resizeGameOverImage()
 
 void MainWindow::blinkBaseAttacked()
 {
-    if (baseAttacked->isVisible()) {
-        baseAttacked->setVisible(false);
-    } else {
-        baseAttacked->setVisible(true);
+    if (!player->gameOver){
+        if (baseAttacked->isVisible()) {
+            baseAttacked->setVisible(false);
+        } else {
+            baseAttacked->setVisible(true);
+        }
     }
 }
