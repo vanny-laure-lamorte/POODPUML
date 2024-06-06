@@ -354,6 +354,7 @@ C:/Qt/projet/POODPUML/TowerDefense/include/healthbar.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/include/healthbar.h
+C:/Qt/projet/POODPUML/TowerDefense/source/healthbar.cpp
 C:/Qt/projet/POODPUML/TowerDefense/include/mainwindow.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug
@@ -1057,7 +1058,6 @@ C:/Qt/projet/POODPUML/TowerDefense/include/player.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/include/player.h
 C:/Qt/projet/POODPUML/TowerDefense/main.cpp
-C:/Qt/projet/POODPUML/TowerDefense/source/healthbar.cpp
 C:/Qt/projet/POODPUML/TowerDefense/include/monster.h
  mmc:Q_OBJECT
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug

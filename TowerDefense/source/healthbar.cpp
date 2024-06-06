@@ -55,9 +55,10 @@ void HealthBar::paintEvent(QPaintEvent *event) {
     double distanceToTower1 = std::sqrt(std::pow(monsterPosX - tower1X, 2) + std::pow(monsterPosY - tower1Y, 2));
     double distanceToTower2 = std::sqrt(std::pow(monsterPosX - tower2X, 2) + std::pow(monsterPosY - tower2Y, 2));
 
-    // From green to red
-    if (distanceToTower1 <= 200 || distanceToTower2 <= 200) {
+    if (health < 35) {
         painter.setBrush(Qt::red);
+    } else if (health < 66){
+        painter.setBrush(QColor(255, 165, 0));
     } else {
         painter.setBrush(Qt::green);
     }
