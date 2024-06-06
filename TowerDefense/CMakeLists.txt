@@ -14,11 +14,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 
 set(PROJECT_SOURCES
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
-        music.h
-        music.cpp
+        source/mainwindow.cpp
+        include/mainwindow.h
+        source/mainwindow.ui
+        include/music.h
+        source/music.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -26,10 +26,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
         ressources.qrc
-        monster.h monster.cpp
-        tower.h tower.cpp
-        player.h player.cpp
-        healthbar.cpp
+        include/monster.h source/monster.cpp
+        include/tower.h source/tower.cpp
+        include/player.h source/player.cpp
+        include/healthbar.h source/healthbar.cpp
+
 
     )
 # Define target properties for Android with Qt 6 as:
