@@ -8,6 +8,7 @@
 	"INPUTS" : 
 	[
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/music/music1.mp3",
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/timer.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster12.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Tower3.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/music.png",
@@ -18,6 +19,8 @@
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster15.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster13.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/noTower.png",
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/base2.png",
+		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/gameOver.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/Hammer4.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster23.png",
 		"C:/Qt/projet/POODPUML/TowerDefense/assets/img/monster16.png",

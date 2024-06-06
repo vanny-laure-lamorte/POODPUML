@@ -983,7 +983,9 @@ C:/Qt/projet/POODPUML/TowerDefense/music.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/music.h
 C:/Qt/projet/POODPUML/TowerDefense/mainwindow.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QElapsedTimer
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QTime
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h
@@ -1004,6 +1006,7 @@ C:/Qt/projet/POODPUML/TowerDefense/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare_impl.h
@@ -1017,7 +1020,9 @@ C:/Qt/projet/POODPUML/TowerDefense/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qelapsedtimer.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qendian.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qflags.h
@@ -1037,6 +1042,7 @@ C:/Qt/projet/POODPUML/TowerDefense/mainwindow.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qline.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlist.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlogging.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qmalloc.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qmap.h
@@ -1373,6 +1379,9 @@ C:/Qt/projet/POODPUML/TowerDefense/player.cpp
 C:/Qt/projet/POODPUML/TowerDefense/main.cpp
 C:/Qt/projet/POODPUML/TowerDefense/monster.h
  mmc:Q_OBJECT
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QElapsedTimer
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QObject
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QTime
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h
@@ -1393,6 +1402,7 @@ C:/Qt/projet/POODPUML/TowerDefense/monster.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearraylist.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayview.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcalendar.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qchar.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcompare_impl.h
@@ -1406,7 +1416,9 @@ C:/Qt/projet/POODPUML/TowerDefense/monster.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qcontiguouscache.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdarwinhelpers.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdatastream.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdatetime.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qdebug.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qelapsedtimer.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qendian.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qexceptionhandling.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qflags.h
@@ -1426,6 +1438,7 @@ C:/Qt/projet/POODPUML/TowerDefense/monster.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlatin1stringview.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qline.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlist.h
+ mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlocale.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qlogging.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qmalloc.h
  mdp:C:/Qt/6.7.1/mingw_64/include/QtCore/qmap.h
@@ -1735,6 +1748,7 @@ C:/Qt/projet/POODPUML/TowerDefense/monster.h
  mdp:C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h
  mdp:C:/Qt/projet/POODPUML/TowerDefense/monster.h
+ mdp:C:/Qt/projet/POODPUML/TowerDefense/player.h
 C:/Qt/projet/POODPUML/TowerDefense/healthbar.cpp
 C:/Qt/projet/POODPUML/TowerDefense/tower.h
  mmc:Q_OBJECT

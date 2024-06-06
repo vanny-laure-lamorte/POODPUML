@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <QVBoxLayout>
+#include <QLabel>
+#include <QTimer>
 
 #include "tower.h"
 #include "player.h"
@@ -27,17 +29,31 @@ private slots:
     void showGamePage();
     void updateGoldLabel(int newGold);
     void updateLifeLabel(int newLife);
+    void attack();
+
+    void resizeGameOverImage();
+    void blinkBaseAttacked();
 
 private:
     Player *player;
-    void moveMonsters();
 
     int x = 0, y = 0 ;
 
     Ui::MainWindow *ui;
-    Tower *tower; // Moved tower declaration to the private section
+    Tower *tower;
     Music *music;
     QVector<Monster*> monsters;
+    bool gameLaunched = false;
+    QTimer *attackTimer;
+    QTimer *blinkTimer;
+
+    QLabel *baseAttacked;
+
+    QLabel *gameOverLabel;
+    QPixmap gameOverimage;
+    QTimer *resizeImage;
+    int imageX = 50;
+    int imageY = 28;
 };
 
 #endif // MAINWINDOW_H

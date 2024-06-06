@@ -30,6 +30,9 @@
         <file>assets/img/monster14.png</file>
         <file>assets/img/monster15.png</file>
         <file>assets/img/monster16.png</file>
+        <file>assets/img/timer.png</file>
         <file>assets/music/music1.mp3</file>
+        <file>assets/img/gameOver.png</file>
+        <file>assets/img/base2.png</file>
     </qresource>
 </RCC>

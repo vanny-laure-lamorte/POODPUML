@@ -1,0 +1,97 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Qt/Tools/CMake_64/bin/cmake.exe",
+			"cpack" : "C:/Qt/Tools/CMake_64/bin/cpack.exe",
+			"ctest" : "C:/Qt/Tools/CMake_64/bin/ctest.exe",
+			"root" : "C:/Qt/Tools/CMake_64/share/cmake-3.27"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 27,
+			"patch" : 7,
+			"string" : "3.27.7",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-0aea1e3304215b62a35f.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		{
+<<<<<<<< HEAD:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.cmake/api/v1/reply/index-2024-06-05T08-35-46-0417.json
+			"jsonFile" : "cache-v2-fcbd2dbc3ff014ca4451.json",
+========
+			"jsonFile" : "cache-v2-ff6340fc10f09742ea3a.json",
+>>>>>>>> main:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.cmake/api/v1/reply/index-2024-06-03T09-23-13-0347.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-fccc311822d2b2915c14.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+<<<<<<<< HEAD:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.cmake/api/v1/reply/index-2024-06-05T08-35-46-0417.json
+			"jsonFile" : "cache-v2-fcbd2dbc3ff014ca4451.json",
+========
+			"jsonFile" : "cache-v2-ff6340fc10f09742ea3a.json",
+>>>>>>>> main:TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/.cmake/api/v1/reply/index-2024-06-03T09-23-13-0347.json
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-fccc311822d2b2915c14.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-0aea1e3304215b62a35f.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		}
+	}
+}

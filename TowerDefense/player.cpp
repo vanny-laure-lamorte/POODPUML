@@ -27,5 +27,8 @@ void Player::setLife(int value)
     if (life != value) {
         life = value;
         emit lifeChanged(life);
+        if (life <= 0) {
+            gameOver = true;
+        }
     }
 }
