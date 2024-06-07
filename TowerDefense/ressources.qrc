@@ -34,5 +34,6 @@
         <file>assets/music/music1.mp3</file>
         <file>assets/img/gameOver.png</file>
         <file>assets/img/base2.png</file>
+        <file>assets/img/greyFrame.png</file>
     </qresource>
 </RCC>

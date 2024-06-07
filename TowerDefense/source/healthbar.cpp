@@ -1,50 +1,52 @@
 #include "../include/healthbar.h"
+#include <QDebug>
 
-// Initialize the static members
+// Initialize the static member
 QList<HealthBar*> HealthBar::healthbarList;
 
-HealthBar::HealthBar(QWidget *parent, int health, int monsterPosX, int monsterPosY)
-    : QWidget(parent), health(health), monsterPosX(monsterPosX), monsterPosY(monsterPosY) {
+HealthBar::HealthBar(QWidget *parent, Monster *monster, int health, int monsterPosX, int monsterPosY)
+    : QWidget(parent), health(health), monsterPosX(monsterPosX), monsterPosY(monsterPosY), monster(monster) {
     setFixedSize(50, 6);
     healthbarList.append(this); // Add this instance to the list
 
-    damageTimer = new QTimer;
+    damageTimer = new QTimer(this);
     connect(damageTimer, &QTimer::timeout, this, &HealthBar::applyDamageToClosest);
     damageTimer->start(1000); // 1000 milliseconds = 1 second
-
 }
 
 void HealthBar::setHealth(int newHealth) {
     health = newHealth;
     update();
+
+    if (health <= 0) {
+        healthbarList.removeOne(this);
+        delete this;
+    }
 }
 
-void HealthBar::updatePosition(int x, int y) {
+tuple<int, int, int> HealthBar::updatePosition(int x, int y) {
     monsterPosX = x;
     monsterPosY = y;
+    return {health, monsterPosX, monsterPosY};
 }
 
 void HealthBar::applyDamageToClosest() {
     // Towers positions
-    int tower1X = 630, tower1Y = 330;
-    int tower2X = 1000, tower2Y = 540;
+    const int tower1X = 630, tower1Y = 330;
+    const int tower2X = 1000, tower2Y = 540;
 
-    // Variables to track the closest health bars
     HealthBar* closestToTower1 = nullptr;
     HealthBar* closestToTower2 = nullptr;
     double minDistanceToTower1 = std::numeric_limits<double>::max();
     double minDistanceToTower2 = std::numeric_limits<double>::max();
 
-    // Iterate through all health bars to find the closest ones
     for (HealthBar* healthBar : healthbarList) {
-        // Distance to tower 1
         double distanceToTower1 = std::sqrt(std::pow(healthBar->monsterPosX - tower1X, 2) + std::pow(healthBar->monsterPosY - tower1Y, 2));
         if (distanceToTower1 < minDistanceToTower1) {
             minDistanceToTower1 = distanceToTower1;
             closestToTower1 = healthBar;
         }
 
-        // Distance to tower 2
         double distanceToTower2 = std::sqrt(std::pow(healthBar->monsterPosX - tower2X, 2) + std::pow(healthBar->monsterPosY - tower2Y, 2));
         if (distanceToTower2 < minDistanceToTower2) {
             minDistanceToTower2 = distanceToTower2;
@@ -52,15 +54,12 @@ void HealthBar::applyDamageToClosest() {
         }
     }
 
-    // Apply damage to the closest health bars
     if (closestToTower1 && minDistanceToTower1 <= 200) {
-        closestToTower1->health -= 1; // Example damage value
-        closestToTower1->update(); // Request a repaint for the health bar
+        closestToTower1->setHealth(closestToTower1->health - 1); // Example damage value
     }
 
     if (closestToTower2 && minDistanceToTower2 <= 200) {
-        closestToTower2->health -= 1; // Example damage value
-        closestToTower2->update(); // Request a repaint for the health bar
+        closestToTower2->setHealth(closestToTower2->health - 1); // Example damage value
     }
 }
 
@@ -68,7 +67,6 @@ void HealthBar::paintEvent(QPaintEvent *event) {
     Q_UNUSED(event);
     QPainter painter(this);
 
-    // Black background
     painter.setBrush(Qt::black);
     painter.drawRect(0, 0, width(), height());
 

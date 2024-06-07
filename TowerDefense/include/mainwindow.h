@@ -28,6 +28,7 @@ public:
 private slots:
     void showMenuPage();
     void showGamePage();
+
     void updateGoldLabel(int newGold);
     void updateLifeLabel(int newLife);
     void attack();
@@ -45,6 +46,7 @@ private:
     Music *music;
     QVector<Monster*> monsters;
     bool gameLaunched = false;
+    bool menuLaunched = true;
     QTimer *attackTimer;
     QTimer *blinkTimer;
 

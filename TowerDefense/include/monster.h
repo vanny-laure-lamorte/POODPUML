@@ -23,7 +23,6 @@ public:
     static QList<Monster*> generateMonsters(QWidget *parent, Player *player);
     void moveSpeed(int speed);
     void initialPosition(int x, int y);
-    void setHealth(int health);
     void startWaves();
     void initializeTimers();
     bool gameLaunched = false;
@@ -70,6 +69,5 @@ private:
     QList<Monster*> monsters;
 
     HealthBar *healthBar;
-    void ReduceHealth();
 };
 #endif

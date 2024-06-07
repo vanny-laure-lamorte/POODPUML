@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->buttonGame, &QPushButton::clicked, this, &MainWindow::showGamePage);
     connect(ui->buttonMenu, &QPushButton::clicked, this, &MainWindow::showMenuPage);
+    connect(ui->buttonExit, SIGNAL(clicked()), this, SLOT(close()));
 
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
 
@@ -86,6 +87,7 @@ void MainWindow::showGamePage()
             monster->initializeTimers();
         }
         gameLaunched = true;
+        menuLaunched = false;
     }
 }
 
@@ -93,6 +95,10 @@ void MainWindow::showMenuPage()
 {
     music->pause();
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
+    if(!menuLaunched){
+        gameLaunched = false;
+        menuLaunched = true;
+    }
 }
 
 void MainWindow::updateGoldLabel(int newGold)
@@ -107,22 +113,33 @@ void MainWindow::updateLifeLabel(int newLife)
     ui->labelLife->setText(QString::number(newLife));
 }
 
-void MainWindow::attack()
-{
+void MainWindow::attack(){
+    int monsterAttacking = 0;
     for (Monster *monster : monsters) {
         if (player->getLife() > 0) {
             if (monster->attacking) {
-                player->setLife(player->getLife() - 1);
-                blinkTimer->start();
+                monsterAttacking ++;
+
             }
         } else {
             if (!player->gameOver) {
                 player->gameOver = true;
+                monsterAttacking = 0;
             }
+            if (!menuLaunched){
                 gameOverLabel->setVisible(true);
                 resizeImage->start(3);
-
+            }
+            else
+                gameOverLabel->setVisible(false);
         }
+    }
+    player->setLife(player->getLife() - monsterAttacking);
+    if (monsterAttacking > 0)
+        blinkTimer->start();
+    else{
+        baseAttacked->setVisible(false);
+        blinkTimer->stop();
     }
 }
 

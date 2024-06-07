@@ -131,14 +131,16 @@ void Monster::moveMonster() {
     healthBar->move(posX, posY - 10);
 
     // Damage
-    healthBar->updatePosition(posX, posY);
+    auto [health, monsterPosX, monsterPosY] = healthBar->updatePosition(posX, posY);
+    if (health <= 0){
+        attacking = false;
+        for (Monster *monster: monsters)
+            if(posX == monsterPosX && posY == monsterPosY)
+                monsters.removeOne(this);
+                delete this;
+    }
 
     }
-}
-
-void Monster::setHealth(int newHealth) {
-    health = newHealth;
-    healthBar->setHealth(newHealth);
 }
 
 void Monster::waveButton() {
@@ -163,23 +165,6 @@ void Monster::startWave2() {
 
 void Monster::startWave3() {
     wave3Move = true;
-}
-
-
-
-void Monster::ReduceHealth() {
-    const int proximityThreshold = 50; // Distance seuil pour la proximité
-    const QPoint proximityPoint1(630, 330);
-    const QPoint proximityPoint2(1000, 540);
-
-    QPoint currentPosition(posX, posY);
-
-    if ((currentPosition - proximityPoint1).manhattanLength() < proximityThreshold ||
-        (currentPosition - proximityPoint2).manhattanLength() < proximityThreshold) {
-        int newHealth = health - 1; // Réduit la santé de 1
-        if (newHealth < 0) newHealth = 0; // Évite d'avoir une santé négative
-        setHealth(newHealth);
-    }
 }
 
 void Monster::updateCountdown() {

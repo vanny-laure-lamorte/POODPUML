@@ -22,7 +22,7 @@ signals:
 
 private:
     int gold = 400;
-    int life = 10;  // Example initial value for life
+    int life = 50;  // Example initial value for life
 };
 
 #endif // PLAYER_H
