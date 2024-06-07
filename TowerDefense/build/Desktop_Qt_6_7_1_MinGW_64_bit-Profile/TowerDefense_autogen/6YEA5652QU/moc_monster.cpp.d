@@ -2,6 +2,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QDebug \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QElapsedTimer \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QObject \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QTime \
   C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \

@@ -1,5 +1,7 @@
 C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/6YEA5652QU/moc_healthbar.cpp: C:/Qt/projet/POODPUML/TowerDefense/include/healthbar.h \
   C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/TowerDefense_autogen/moc_predefs.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QList \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/QTimer \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20functional.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20memory.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/q20type_traits.h \
@@ -13,6 +15,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtCore/qatomic.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qatomic_cxx11.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbasicatomic.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qbasictimer.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbindingstorage.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearray.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qbytearrayalgorithms.h \
@@ -101,6 +104,7 @@ C:/Qt/projet/POODPUML/TowerDefense/build/Desktop_Qt_6_7_1_MinGW_64_bit-Profile/T
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtenvironmentvariables.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtextstream.h \
+  C:/Qt/6.7.1/mingw_64/include/QtCore/qtimer.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtmetamacros.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtnoop.h \
   C:/Qt/6.7.1/mingw_64/include/QtCore/qtpreprocessorsupport.h \
