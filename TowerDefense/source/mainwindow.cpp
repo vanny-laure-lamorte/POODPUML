@@ -15,6 +15,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->buttonGame, &QPushButton::clicked, this, &MainWindow::showGamePage);
     connect(ui->buttonMenu, &QPushButton::clicked, this, &MainWindow::showMenuPage);
     connect(ui->buttonRules, &QPushButton::clicked, this, &MainWindow::showRulePage);
+    connect(ui->backToMenu, &QPushButton::clicked, this, &MainWindow::showMenuPage);
+
     //
     connect(ui->buttonExit, SIGNAL(clicked()), this, SLOT(close()));
 
