@@ -107,6 +107,7 @@ void MainWindow::showMenuPage()
 
 void MainWindow::showRulePage(){
     ui->stackedWidget->setCurrentWidget(ui->pageRule);
+
 }
 
 void MainWindow::updateGoldLabel(int newGold)

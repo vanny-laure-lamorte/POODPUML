@@ -35,5 +35,7 @@
         <file>assets/img/gameOver.png</file>
         <file>assets/img/base2.png</file>
         <file>assets/img/greyFrame.png</file>
+        <file>assets/img/gameBackgroundrule.png</file>
+        <file>assets/img/bestPlayer.png</file>
     </qresource>
 </RCC>
