@@ -676,6 +676,7 @@ background-color: rgb(39, 174, 96);
      <zorder>timeLabel1</zorder>
      <zorder>btnMute</zorder>
     </widget>
+    <widget class="QWidget" name="pageRule"/>
    </widget>
   </widget>
  </widget>

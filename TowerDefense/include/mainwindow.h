@@ -28,6 +28,7 @@ public:
 private slots:
     void showMenuPage();
     void showGamePage();
+    void showRulePage();
 
     void updateGoldLabel(int newGold);
     void updateLifeLabel(int newLife);

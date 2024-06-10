@@ -14,6 +14,8 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->buttonGame, &QPushButton::clicked, this, &MainWindow::showGamePage);
     connect(ui->buttonMenu, &QPushButton::clicked, this, &MainWindow::showMenuPage);
+    connect(ui->buttonRules, &QPushButton::clicked, this, &MainWindow::showRulePage);
+    //
     connect(ui->buttonExit, SIGNAL(clicked()), this, SLOT(close()));
 
     ui->stackedWidget->setCurrentWidget(ui->pageMenu);
@@ -99,6 +101,10 @@ void MainWindow::showMenuPage()
         gameLaunched = false;
         menuLaunched = true;
     }
+}
+
+void MainWindow::showRulePage(){
+    ui->stackedWidget->setCurrentWidget(ui->pageRule);
 }
 
 void MainWindow::updateGoldLabel(int newGold)

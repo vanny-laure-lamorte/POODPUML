@@ -137,7 +137,7 @@ void Monster::moveMonster() {
         for (Monster *monster: monsters)
             if(posX == monsterPosX && posY == monsterPosY)
                 monsters.removeOne(this);
-                delete this;
+                this->deleteLater();
     }
 
     }

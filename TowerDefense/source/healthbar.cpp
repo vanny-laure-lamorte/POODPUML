@@ -20,7 +20,7 @@ void HealthBar::setHealth(int newHealth) {
 
     if (health <= 0) {
         healthbarList.removeOne(this);
-        delete this;
+        this->deleteLater();
     }
 }
 
@@ -32,8 +32,8 @@ tuple<int, int, int> HealthBar::updatePosition(int x, int y) {
 
 void HealthBar::applyDamageToClosest() {
     // Towers positions
-    const int tower1X = 630, tower1Y = 330;
-    const int tower2X = 1000, tower2Y = 540;
+    const int tower1X = 670, tower1Y = 385;
+    const int tower2X = 1040, tower2Y = 590;
 
     HealthBar* closestToTower1 = nullptr;
     HealthBar* closestToTower2 = nullptr;
@@ -72,7 +72,7 @@ void HealthBar::paintEvent(QPaintEvent *event) {
 
     if (health < 35) {
         painter.setBrush(Qt::red);
-    } else if (health < 66) {
+    } else if (health < 99) {
         painter.setBrush(QColor(255, 165, 0)); // Orange
     } else {
         painter.setBrush(Qt::green);
